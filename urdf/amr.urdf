@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<robot name="AmrRobot">
+    <!-- material-->
+    <material name="black">
+      <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>  
+    <material name="white">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+    <!--Ana gövde-->
+    <link name="dummy">
+    </link>
+    <link name="base_link">
+        <visual>
+          <geometry>
+            <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.dae" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <origin rpy="-3.14 0 0" xyz="-0.47 0.3255 0.27"/>
+          <material name="white"/>
+        </visual>
+        <collision>
+          <geometry>
+            <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <mass value="30"/>
+          <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+      </link>
+        <joint name="dummy_base_link" type="fixed">
+          <origin rpy="0 0 0" xyz="0 0 0.10"/>
+            <parent link="dummy"/>
+            <child link="base_link"/>
+        </joint>
+
+<!-- -->   
+    <!--Sağ Motor ve Tekerlek-->
+    <link name="right_engine_and_wheel">
+        <visual>
+          <geometry>
+            <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/motorveteker.dae" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <origin rpy="-1.57 0 0" xyz="-0.082 -0.165 0.0736"/>
+          <material name="white"/>
+        </visual>
+        <collision>
+          <geometry>
+            <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/motorveteker.dae" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+        <inertial>
+          <mass value="1"/>
+          <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+      </link>
+        <joint name="right_engine_and_wheel_base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="right_engine_and_wheel"/>
+            <axis xyz="0.0 1 0"/>
+            <origin rpy="0 0 0" xyz="0 0.3 0"/>
+        </joint>
+
+<!-- --> 
+    <!--Sol Motor ve Tekerlek-->
+    <link name="left_engine_and_wheel">
+      <visual>
+        <geometry>
+          <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/motorveteker.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <origin rpy="1.57 0 0" xyz="-0.082 0.165 -0.0736"/>
+        <material name="white"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/motorveteker.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      
+      </collision>
+      <inertial>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+      <joint name="left_engine_and_wheel_base_link" type="continuous">
+          <parent link="base_link"/>
+          <child link="left_engine_and_wheel"/>
+          <axis xyz="0.0 1 0"/>
+          <origin rpy="0 0 0" xyz="0 -0.3 0"/>
+      </joint>
+<!-- --> 
+
+
+<link name="front_lidar">
+  <visual>
+    <geometry>
+      <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <origin rpy="0 0 0" xyz="0.0768 0.08 0.01"/>
+    <material name="white"/>
+  </visual>
+  <collision>
+    <geometry>
+      <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="1"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+  </inertial>
+</link>
+  <joint name="front_lidar_and_base_link" type="fixed">
+      <parent link="base_link"/>
+      <child link="front_lidar"/>
+       <origin rpy="3.14 0 0.78 " xyz="-0.37 -0.223 0.20"/>
+  </joint>
+
+<!-- --> 
+
+
+
+<link name="behind_lidar">
+  <visual>
+    <geometry>
+      <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <origin rpy="0 0 0" xyz="0.0760 0.09 0.01"/>
+    <material name="white"/>
+  </visual>
+  <collision>
+    <geometry>
+      <mesh filename="package://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+  <inertial>
+    <mass value="1"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+  </inertial>
+</link>
+  <joint name="behind_lidar_and_base_link" type="fixed">
+      <parent link="base_link"/>
+      <child link="behind_lidar"/>
+       <origin rpy="3.14 0 -2.30" xyz="0.375 0.223 0.20"/>
+  </joint>
+
+<!-- --> 
+
+ </robot>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AmrRobot">
+<!-- inertial-->
+<xacro:property name="pi" value="3.14"/>
+<xacro:property name="amr_mini_caster_wheel_dx" value="-0.0380" />
+<xacro:property name="amr_mini_caster_wheel_dy" value="0" />
+<xacro:property name="amr_mini_caster_wheel_dz" value="-0.01" />
+<xacro:property name="locationright" value="1"/>
+
+<xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/caster_wheel_link.xacro"/>
+ 
+
+<xacro:macro name="default_inertial" params="mass">
+    <inertial>
+      <origin xyz="0 0 -0.04" rpy="0 0 0" />
+      <mass value="${mass}" />
+      <inertia ixx="0.0002" ixy="0.0" ixz="0.0" iyy="0.0002" iyz="0.0" izz="0.0001" />  
+    </inertial>
+  </xacro:macro> 
+  
+          
+  <xacro:macro name="caster_wheel" params="parent locationprefix  *origin">
+      <joint name="${locationprefix}_caster_rotation_joint" type="continuous">
+          <xacro:insert_block name="origin"/>
+          <parent link="${parent}"/>
+          <child link="${locationprefix}_caster_rotation_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-${pi}" upper="${pi}" effort="100" velocity="0.1" />
+        <dynamics damping="0.01" friction="0.1"/>
+        </joint>
+      <link name="${locationprefix}_caster_rotation_link">
+          <visual>
+          <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
+            </geometry>
+           
+          </visual>
+  
+          <collision>
+            <geometry>
+              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+          </collision>
+          <xacro:default_inertial mass="0.21"/>
+  
+          
+  
+      </link>
+      <!-- <gazebo reference="${locationprefix}_caster_rotation_link">
+        <material>
+          Gazebo/Orange</material>
+    </gazebo> -->
+
+      <xacro:caster_wheel_link parent="${locationprefix}_caster_rotation_link" locationprefix="${locationprefix}">
+        <origin rpy="${pi*0.5} 0 0 " xyz="${amr_mini_caster_wheel_dx} ${-amr_mini_caster_wheel_dy * locationright} ${amr_mini_caster_wheel_dz*8.8}"/>
+      </xacro:caster_wheel_link>
+  
+  </xacro:macro>
+    
+
+</robot>

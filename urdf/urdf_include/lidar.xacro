@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ArmRobot">
+<xacro:property name="pi" value="3.14"/>
+<!-- inertial-->
+<xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/common_properties.urdf.xacro"/>
+  
+
+  <xacro:macro name="lidar" params="name parent *origin">
+      <joint name="${name}_joint" type="fixed">
+          <xacro:insert_block name="origin"/>
+          <parent link="${parent}"/>
+          <child link="${name}_laser_link"/>
+      </joint>
+
+      <link name="${name}_laser_link">
+          <visual>
+              <geometry>
+                <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+              </geometry>
+              <origin rpy="0 0 ${pi}" xyz="-0.072 -0.085 0.02"/>
+            </visual>
+            <collision>
+              <geometry>
+                <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+              </geometry>
+              <origin rpy="0 0 ${pi}" xyz="-0.072 -0.085 0.02"/>
+            </collision>
+      </link>
+
+    <!-- <gazebo reference="${name}_laser_link">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+   
+    <gazebo reference="${name}_laser_link">
+      <sensor type="ray" name="${name}_rplidar_sensor">
+          <pose>0 0 0 0 0 0</pose>
+          <visualize>true</visualize>
+          <update_rate>15</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>270</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.45245</min_angle>
+                <max_angle>2.34159</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.10</min>
+              <max>30.0</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+              <namespace>amr_mini_description</namespace>
+              <remapping>~/out:=${name}_amr_mini_laser</remapping>
+            </ros>
+              <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>${name}_laser_link</frame_name>
+          </plugin>
+        </sensor>
+      </gazebo>   -->
+  </xacro:macro>
+</robot>

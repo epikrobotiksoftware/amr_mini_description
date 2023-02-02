@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/mkutan/Documents/amr_mini/install/amr_mini_description/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/mkutan/Documents/amr_mini/install/amr_mini_description/lib/python3.8/site-packages"
+    ]
+}
