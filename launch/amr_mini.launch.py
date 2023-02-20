@@ -82,6 +82,14 @@ def generate_launch_description():
         parameters=[robot_localization_file_path,
                     {'use_sim_time': use_sim_time}]
     )
+
+    merge_laser_scan = Node(
+        package='amr_mini_description',
+        executable='merge_laser_scan',
+        name='merge_laser_scan',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
     slam_toolbox = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
@@ -90,14 +98,6 @@ def generate_launch_description():
         parameters=[params_file_dir,
                     {'use_sim_time': use_sim_time}]
     )
-
-    pkg_dir = get_package_share_directory('amr_mini_description')
-    navigation2 = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            pkg_dir + '/merge_2_scan.launch.py'),
-        launch_arguments={
-            'use_sim_time': use_sim_time
-        }.items())
 
     # map_server = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(
@@ -129,6 +129,7 @@ def generate_launch_description():
         robot_state_publisher,
         robot_localization_node,
         # rqt_robot_steering,
+        merge_laser_scan,
         rviz_node,
         slam_toolbox
     ])

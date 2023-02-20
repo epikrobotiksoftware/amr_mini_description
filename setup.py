@@ -43,8 +43,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'frontlidar_pub=amr_mini_description.publisher_member_function:main',
-            'frontlidar_sub=amr_mini_description.subscriber_member_function:main',
+            # 'frontlidar_pub=amr_mini_description.publisher_member_function:main',
+            'merge_laser_scan=amr_mini_description.subscriber_member_function:main',
         ],
     },
 )

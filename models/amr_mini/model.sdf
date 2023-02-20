@@ -271,7 +271,7 @@
         </visual>
         <sensor name='back_lidar_rplidar_sensor' type='ray'>
           <visualize>1</visualize>
-          <update_rate>15</update_rate>
+          <update_rate>60</update_rate>
           <ray>
             <scan>
               <horizontal>
@@ -309,7 +309,7 @@
         </sensor>
         <sensor name='depth_camera' type='depth'>
           <visualize>1</visualize>
-          <update_rate>10</update_rate>
+          <update_rate>60</update_rate>
           <plugin name='camera_depth_plugin' filename='libgazebo_ros_camera.so'>
             <ros>
               <namespace>amr_mini_description</namespace>
@@ -366,7 +366,7 @@
         </sensor>
         <sensor name='front_lidar_rplidar_sensor' type='ray'>
           <visualize>1</visualize>
-          <update_rate>15</update_rate>
+          <update_rate>60</update_rate>
           <ray>
             <scan>
               <horizontal>
@@ -1179,7 +1179,7 @@
           <namespace>amr_mini_description</namespace>
         </ros>
 
-        <update_rate>30</update_rate>
+        <update_rate>60</update_rate>
 
         <left_joint>left_wheel_joint</left_joint>
         <right_joint>right_wheel_joint</right_joint>
@@ -1208,7 +1208,7 @@
           <remapping>~/out:=joint_states</remapping>
         </ros>
 
-        <update_rate>30</update_rate>
+        <update_rate>60</update_rate>
 
         <joint_name>left_wheel_joint</joint_name>
         <joint_name>right_wheel_joint</joint_name>
