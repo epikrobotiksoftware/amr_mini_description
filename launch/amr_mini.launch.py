@@ -33,6 +33,9 @@ def generate_launch_description():
     robot_localization_file_path = os.path.join(get_package_share_directory(
         'amr_mini_description'), 'config/ekf.yaml')
 
+    params_file_dir = os.path.join(
+        get_package_share_directory('amr_mini_description'), 'config', 'mapper_params_online_async.yaml')
+
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     #############################################################
 
@@ -78,15 +81,37 @@ def generate_launch_description():
         output='screen',
         parameters=[robot_localization_file_path,
                     {'use_sim_time': use_sim_time}]
-        #
+    )
+    slam_toolbox = Node(
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        output='screen',
+        parameters=[params_file_dir,
+                    {'use_sim_time': use_sim_time}]
     )
 
-    rqt_robot_steering = Node(package='rqt_robot_steering',
-                              executable='rqt_robot_steering',
-                              name='rqt_robot_steering',
-                              output='screen',
-                              #   parameters=[{'use_sim_time': use_sim_time, 'robot_description': robot_desc}]
-                              )
+    pkg_dir = get_package_share_directory('amr_mini_description')
+    navigation2 = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            pkg_dir + '/merge_2_scan.launch.py'),
+        launch_arguments={
+            'use_sim_time': use_sim_time
+        }.items())
+
+    # map_server = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         [launch_file_dir, '/online_async_launch.py']),
+    #     launch_arguments={'use_sim_time': 'true',
+    #                       'params_file': params_file_dir}.items(),
+    # )
+
+    # rqt_robot_steering = Node(package='rqt_robot_steering',
+    #                           executable='rqt_robot_steering',
+    #                           name='rqt_robot_steering',
+    #                           output='screen',
+    #                           #   parameters=[{'use_sim_time': use_sim_time, 'robot_description': robot_desc}]
+    #                           )
 
     return LaunchDescription([
         DeclareLaunchArgument(name='model', default_value=robot_desc,
@@ -103,9 +128,8 @@ def generate_launch_description():
         joint_state_publisher,
         robot_state_publisher,
         robot_localization_node,
-        rqt_robot_steering,
+        # rqt_robot_steering,
         rviz_node,
-
-
+        slam_toolbox
     ])
     #############################################################

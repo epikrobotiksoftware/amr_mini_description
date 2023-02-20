@@ -13,6 +13,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name+"/"+package_name), glob(package_name+'/*')),
         (os.path.join('share', package_name), glob('launch/*.py')),
         (os.path.join('share', package_name), glob('rviz/*')),
         (os.path.join('share', package_name+'/urdf'),
@@ -29,6 +30,8 @@ setup(
          glob('worlds/*')),
         (os.path.join('share', package_name+'/config'),
          glob('config/*')),
+        (os.path.join('share', package_name+'/src'),
+         glob('src/*')),
 
     ],
     install_requires=['setuptools'],
@@ -40,7 +43,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joint_state_publisher_gui=joint_state_publisher_gui.joint_state_publisher:main'
+            'frontlidar_pub=amr_mini_description.publisher_member_function:main',
+            'frontlidar_sub=amr_mini_description.subscriber_member_function:main',
         ],
     },
 )
