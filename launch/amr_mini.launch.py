@@ -7,7 +7,6 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, Exec
 from launch_ros.actions import Node
 import xacro
 from launch import LaunchDescription
-from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
