@@ -36,6 +36,7 @@ def generate_launch_description():
         get_package_share_directory('amr_mini_description'), 'config', 'mapper_params_online_async.yaml')
 
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+    launch_file_dir = get_package_share_directory("slam_toolbox")
     #############################################################
 
     # spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
@@ -87,7 +88,7 @@ def generate_launch_description():
         executable='merge_laser_scan',
         name='merge_laser_scan',
         output='screen',
-        # parameters=[{'use_sim_time': use_sim_time}]
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     slam_toolbox = Node(
         package='slam_toolbox',
@@ -95,15 +96,15 @@ def generate_launch_description():
         name='slam_toolbox',
         output='screen',
         parameters=[params_file_dir,
-                    ]
+                    {'use_sim_time': use_sim_time}]
     )
 
-    # map_server = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         [launch_file_dir, '/online_async_launch.py']),
-    #     launch_arguments={'use_sim_time': 'true',
-    #                       'params_file': params_file_dir}.items(),
-    # )
+    map_server = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            [launch_file_dir, '/online_async_launch.py']),
+        launch_arguments={'use_sim_time': 'true',
+                          'params_file': params_file_dir}.items(),
+    )
 
     # rqt_robot_steering = Node(package='rqt_robot_steering',
     #                           executable='rqt_robot_steering',
@@ -128,8 +129,10 @@ def generate_launch_description():
         robot_state_publisher,
         robot_localization_node,
         # rqt_robot_steering,
-        merge_laser_scan,
+        # merge_laser_scan,
         rviz_node,
+        # map_server,
         slam_toolbox
+
     ])
     #############################################################

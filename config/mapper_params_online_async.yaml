@@ -1,6 +1,7 @@
 slam_toolbox:
   ros__parameters:
     # Plugin params
+
     solver_plugin: solver_plugins::CeresSolver
     ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
     ceres_preconditioner: SCHUR_JACOBI
@@ -12,15 +13,15 @@ slam_toolbox:
     odom_frame: odom
     map_frame: map
     base_frame: base_footprint
-    scan_topic: /scan
-    mode: localization
+    scan_topic: /front_lidar_amr_mini_laser
+    mode: mapping #localization
 
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/mkutan/Documents/ros2_ws/my_map_serial
-    # map_start_pose: [0.0, 0.0, 0.0]
-    map_start_at_dock: true
+    # map_file_name: /home/mkutan/Documents/ros2_ws/my_map_serial
+    # # map_start_pose: [0.0, 0.0, 0.0]
+    # map_start_at_dock: true
 
     debug_logging: false
     throttle_scans: 1

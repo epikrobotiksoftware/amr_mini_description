@@ -270,8 +270,9 @@
           </material>
         </visual>
         <sensor name='back_lidar_rplidar_sensor' type='ray'>
-          <visualize>1</visualize>
-          <update_rate>60</update_rate>
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <update_rate>5</update_rate>
           <ray>
             <scan>
               <horizontal>
@@ -288,7 +289,7 @@
             </scan>
             <range>
               <min>0.1</min>
-              <max>30</max>
+              <max>15</max>
               <resolution>0.01</resolution>
             </range>
             <noise>
@@ -299,7 +300,7 @@
           </ray>
           <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
             <ros>
-              <namespace>amr_mini_description</namespace>
+              <!-- <namespace>amr_mini_description</namespace> -->
               <remapping>~/out:=back_lidar_amr_mini_laser</remapping>
             </ros>
             <output_type>sensor_msgs/LaserScan</output_type>
@@ -308,8 +309,8 @@
           <pose>-0.37 -0.223 0.29 3.14159 0 -2.36159</pose>
         </sensor>
         <sensor name='depth_camera' type='depth'>
-          <visualize>1</visualize>
-          <update_rate>60</update_rate>
+          <visualize>true</visualize>
+          <update_rate>10.0</update_rate>
           <plugin name='camera_depth_plugin' filename='libgazebo_ros_camera.so'>
             <ros>
               <namespace>amr_mini_description</namespace>
@@ -339,8 +340,8 @@
           </camera>
         </sensor>
         <sensor name='rqb_camera' type='camera'>
-          <visualize>1</visualize>
-          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <update_rate>30.0</update_rate>
           <plugin name='camera_rqb_plugin' filename='libgazebo_ros_camera.so'>
             <ros>
               <namespace>amr_mini_description</namespace>
@@ -365,8 +366,9 @@
           </camera>
         </sensor>
         <sensor name='front_lidar_rplidar_sensor' type='ray'>
-          <visualize>1</visualize>
-          <update_rate>60</update_rate>
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <update_rate>10</update_rate>
           <ray>
             <scan>
               <horizontal>
@@ -383,7 +385,7 @@
             </scan>
             <range>
               <min>0.1</min>
-              <max>30</max>
+              <max>15</max>
               <resolution>0.01</resolution>
             </range>
             <noise>
@@ -394,7 +396,7 @@
           </ray>
           <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
             <ros>
-              <namespace>amr_mini_description</namespace>
+              <!-- <namespace>amr_mini_description</namespace> -->
               <remapping>~/out:=front_lidar_amr_mini_laser</remapping>
             </ros>
             <output_type>sensor_msgs/LaserScan</output_type>
@@ -404,7 +406,7 @@
         </sensor>
         <gravity>1</gravity>
         <sensor name='imu_sensor' type='imu'>
-          <always_on>1</always_on>
+          <always_on>true</always_on>
           <update_rate>30</update_rate>
           <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
             <ros>
@@ -1179,7 +1181,7 @@
           <namespace>amr_mini_description</namespace>
         </ros>
 
-        <update_rate>60</update_rate>
+        <update_rate>30</update_rate>
 
         <left_joint>left_wheel_joint</left_joint>
         <right_joint>right_wheel_joint</right_joint>
@@ -1208,7 +1210,7 @@
           <remapping>~/out:=joint_states</remapping>
         </ros>
 
-        <update_rate>60</update_rate>
+        <update_rate>30</update_rate>
 
         <joint_name>left_wheel_joint</joint_name>
         <joint_name>right_wheel_joint</joint_name>

@@ -1,13 +1,16 @@
 #! /usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSDurabilityPolicy, QoSReliabilityPolicy
+from rclpy.qos import QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolicy
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import LaserScan
+import threading
 from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
+from std_srvs.srv import Empty
 
-flt = 'amr_mini_description/front_lidar_amr_mini_laser'
-blt = 'amr_mini_description/back_lidar_amr_mini_laser'
+flt = 'front_lidar_amr_mini_laser'
+blt = 'back_lidar_amr_mini_laser'
 
 
 class ReadingLaser(Node):
@@ -30,17 +33,23 @@ class ReadingLaser(Node):
         self.merged_pub = self.create_publisher(LaserScan, 'scan', 10)
 
     def listener_callback(self, msg):
-        # self.get_logger().info('I heard : Range[0] "%f" Ranges[100]: "%f"' % (
-        #     msg.ranges[0], msg.ranges[100]))
+        self.get_logger().info('I heard : Range[0] "%f" Ranges[100]: "%f"' % (
+            msg.ranges[0], msg.ranges[100]))
         self.laser_data = msg
         self.merged_pub.publish(msg)
+
+    # def merge_and_publish(self):
+    #     if self.laser_data:
+    #         merged_msg = LaserScan()
+
+    #         self.merged_pub.publish(merged_msg)
 
 
 def main(args=None):
     rclpy.init(args=args)
     reading_laser_flt = ReadingLaser(flt)
     reading_laser_blt = ReadingLaser(blt)
-    executor = MultiThreadedExecutor()
+    executor = MultiThreadedExecutor(4)
     executor.add_node(reading_laser_flt)
     executor.add_node(reading_laser_blt)
     executor.spin()
