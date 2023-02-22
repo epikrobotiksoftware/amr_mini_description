@@ -4,10 +4,8 @@ from rclpy.node import Node
 from rclpy.qos import QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolicy
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import LaserScan
-import threading
 from rclpy.executors import MultiThreadedExecutor
-from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
-from std_srvs.srv import Empty
+
 
 flt = 'front_lidar_amr_mini_laser'
 blt = 'back_lidar_amr_mini_laser'
