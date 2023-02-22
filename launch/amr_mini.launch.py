@@ -87,7 +87,7 @@ def generate_launch_description():
         executable='merge_laser_scan',
         name='merge_laser_scan',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        # parameters=[{'use_sim_time': use_sim_time}]
     )
     slam_toolbox = Node(
         package='slam_toolbox',
@@ -95,7 +95,7 @@ def generate_launch_description():
         name='slam_toolbox',
         output='screen',
         parameters=[params_file_dir,
-                    {'use_sim_time': use_sim_time}]
+                    ]
     )
 
     # map_server = IncludeLaunchDescription(
