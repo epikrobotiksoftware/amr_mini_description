@@ -30,10 +30,10 @@
             <origin rpy="1.57 0 0 " xyz="0 0.05 0"/>
           </collision>
       </link>
-         <!-- <gazebo reference="${name}">
+         <gazebo reference="${name}">
       <material>
         Gazebo/Blue</material>
-  </gazebo> -->
+  </gazebo>
 
   </xacro:macro>
 

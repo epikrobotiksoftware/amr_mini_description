@@ -48,10 +48,10 @@
           
   
       </link>
-      <!-- <gazebo reference="${locationprefix}_caster_rotation_link">
+      <gazebo reference="${locationprefix}_caster_rotation_link">
         <material>
           Gazebo/Orange</material>
-    </gazebo> -->
+    </gazebo>
 
       <xacro:caster_wheel_link parent="${locationprefix}_caster_rotation_link" locationprefix="${locationprefix}">
         <origin rpy="${pi*0.5} 0 0 " xyz="${amr_mini_caster_wheel_dx} ${-amr_mini_caster_wheel_dy * locationright} ${amr_mini_caster_wheel_dz*8.8}"/>

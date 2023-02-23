@@ -35,7 +35,7 @@
             </inertial>
         </link>
 
-        <!-- <gazebo reference="${name}_wheel">
+        <gazebo reference="${name}_wheel">
           <material>
             Gazebo/Trunk</material>
         </gazebo>
@@ -48,8 +48,8 @@
             <minDepth>0.001</minDepth>
             <maxVel>1.0</maxVel>
         </gazebo> -->
-    
-          <!-- <ros2_control name="GazeboSystem" type="system">
+<!--     
+          <ros2_control name="GazeboSystem" type="system">
             <hardware>
               <plugin>gazebo_ros2_control/GazeboSystem</plugin>
             </hardware>

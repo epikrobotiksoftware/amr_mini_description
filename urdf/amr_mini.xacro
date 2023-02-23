@@ -56,7 +56,7 @@
 
     <!-- Left Lidar-->
     <xacro:lidar name="front_lidar" parent="base_link">
-      <origin rpy="${pi} 0 -2.30 " xyz="-${lidar_x} -${lidar_y} ${lidar_z}"/>
+      <origin rpy="${pi} 0 -2.34" xyz="-${lidar_x} -${lidar_y} ${lidar_z}"/>
     </xacro:lidar>
 
     <!--imu-->

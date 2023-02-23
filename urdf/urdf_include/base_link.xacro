@@ -30,9 +30,9 @@
           </inertial>
 
       </link>
-      <!-- <gazebo reference="${name}">
+      <gazebo reference="${name}">
         <material>
           Gazebo/Turquoise</material>
-      </gazebo> -->
+      </gazebo>
   </xacro:macro>
 </robot>

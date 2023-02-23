@@ -36,7 +36,8 @@ def generate_launch_description():
         get_package_share_directory('amr_mini_description'), 'config', 'mapper_params_online_async.yaml')
 
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
-    launch_file_dir = get_package_share_directory("slam_toolbox")
+    launch_file_dir = os.path.join(
+        get_package_share_directory('slam_toolbox'), 'launch')
     #############################################################
 
     # spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
@@ -131,8 +132,8 @@ def generate_launch_description():
         # rqt_robot_steering,
         # merge_laser_scan,
         rviz_node,
-        # map_server,
-        slam_toolbox
+        map_server
+        # slam_toolbox
 
     ])
     #############################################################

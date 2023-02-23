@@ -21,7 +21,7 @@
                 </geometry>
             </collision>   
         </link>
-        <!-- <gazebo reference="${name}">
+       <gazebo reference="${name}">
             <material>Gazebo/Yellow</material>
         </gazebo>      
           <gazebo reference="${name}">
@@ -39,6 +39,6 @@
               <frame_name>${name}</frame_name>
             </plugin>
           </sensor>
-        </gazebo> -->
+        </gazebo>
     </xacro:macro>
 </robot>

@@ -1,1230 +1,1086 @@
 <?xml version="1.0"?>
 <sdf version='1.5'>
-    <model name='amr_mini_description'>
-    <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
-
-      <link name='base_footprint'>
-        <inertial>
-          <pose>0.004604 -0 0.181822 0 -0 0</pose>
-          <mass>5.05</mass>
-          <inertia>
-            <ixx>0.401718</ixx>
-            <ixy>1.40761e-17</ixy>
-            <ixz>-0.00423564</ixz>
-            <iyy>0.512422</iyy>
-            <iyz>-3.35687e-17</iyz>
-            <izz>0.790767</izz>
-          </inertia>
-        </inertial>
-        <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
-          <pose>0.47 -0.3255 0.35 3.14159 -0 3.14159</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__back_lidar_laser_link_collision_1'>
-          <pose>-0.259035 -0.232792 0.27 -3.14159 -0 0.78</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__camera_collision_2'>
-          <pose>0.465 -0 0.364 1.57 -0 1.57</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 1</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__front_lidar_laser_link_collision_3'>
-          <pose>0.258643 0.225943 0.27 -3.14159 -0 -2.3</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__imu_collision_4'>
-          <pose>0.38 -0 0.11 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__left_motor_collision_5'>
-          <pose>-0 0.273 0.08 1.57 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.00065</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__right_motor_collision_6'>
-          <pose>0 -0.273 0.08 1.57 -0 3.14159</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.00065</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
-          <pose>0.47 -0.3255 0.35 3.14159 -0 3.14159</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Turquoise</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__back_lidar_laser_link_visual_1'>
-          <pose>-0.259035 -0.232792 0.27 -3.14159 -0 0.78</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Yellow</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__camera_visual_2'>
-          <pose>0.465 -0 0.364 1.57 -0 1.57</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 1</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__front_lidar_laser_link_visual_3'>
-          <pose>0.258643 0.225943 0.27 -3.14159 -0 -2.3</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Yellow</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__imu_visual_4'>
-          <pose>0.38 -0 0.11 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Yellow</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__left_motor_visual_5'>
-          <pose>-0 0.273 0.08 1.57 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.00065</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__right_motor_visual_6'>
-          <pose>0 -0.273 0.08 1.57 -0 3.14159</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.00065</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <sensor name='back_lidar_rplidar_sensor' type='ray'>
-          <always_on>true</always_on>
-          <visualize>true</visualize>
-          <update_rate>5</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>270</samples>
-                <resolution>1</resolution>
-                <min_angle>-1.45245</min_angle>
-                <max_angle>2.34159</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.1</min>
-              <max>15</max>
-              <resolution>0.01</resolution>
-            </range>
-            <noise>
-              <type>gaussian</type>
-              <mean>0</mean>
-              <stddev>0.01</stddev>
-            </noise>
-          </ray>
-          <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
-            <ros>
-              <!-- <namespace>amr_mini_description</namespace> -->
-              <remapping>~/out:=back_lidar_amr_mini_laser</remapping>
-            </ros>
-            <output_type>sensor_msgs/LaserScan</output_type>
-            <frame_name>back_lidar_laser_link</frame_name>
-          </plugin>
-          <pose>-0.37 -0.223 0.29 3.14159 0 -2.36159</pose>
-        </sensor>
-        <sensor name='depth_camera' type='depth'>
-          <visualize>true</visualize>
-          <update_rate>10.0</update_rate>
-          <plugin name='camera_depth_plugin' filename='libgazebo_ros_camera.so'>
-            <ros>
-              <namespace>amr_mini_description</namespace>
-              <remapping>custom_camera/image_raw:=custom_camera/custom_image</remapping>
-              <remapping>custom_camera/image_depth:=custom_camera/custom_image_depth</remapping>
-              <remapping>custom_camera/camera_info:=custom_camera/custom_info_raw</remapping>
-              <remapping>custom_camera/camera_info_depth:=custom_camera/custom_info_depth</remapping>
-              <remapping>custom_camera/points:=custom_camera/custom_points</remapping>
-            </ros>
-            <camera_name>custom_camera</camera_name>
-            <frame_name>camera</frame_name>
-            <hack_baseline>0.07</hack_baseline>
-            <min_depth>0.001</min_depth>
-            <max_depth>300.0</max_depth>
-          </plugin>
-          <pose>0.465 -0 0.364 0 -0 0</pose>
-          <camera>
-            <horizontal_fov>1.047</horizontal_fov>
-            <image>
-              <width>320</width>
-              <height>240</height>
-            </image>
-            <clip>
-              <near>0.1</near>
-              <far>100</far>
-            </clip>
-          </camera>
-        </sensor>
-        <sensor name='rqb_camera' type='camera'>
-          <visualize>true</visualize>
-          <update_rate>30.0</update_rate>
-          <plugin name='camera_rqb_plugin' filename='libgazebo_ros_camera.so'>
-            <ros>
-              <namespace>amr_mini_description</namespace>
-              <remapping>image_raw:=custom_img</remapping>
-              <remapping>camera_info:=custom_info</remapping>
-            </ros>
-            <camera_name>rgb_cam</camera_name>
-            <frame_name>camera</frame_name>
-            <hack_baseline>0.07</hack_baseline>
-          </plugin>
-          <pose>0.465 -0 0.364 0 -0 0</pose>
-          <camera>
-            <horizontal_fov>1.047</horizontal_fov>
-            <image>
-              <width>320</width>
-              <height>240</height>
-            </image>
-            <clip>
-              <near>0.1</near>
-              <far>100</far>
-            </clip>
-          </camera>
-        </sensor>
-        <sensor name='front_lidar_rplidar_sensor' type='ray'>
-          <always_on>true</always_on>
-          <visualize>true</visualize>
-          <update_rate>10</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>270</samples>
-                <resolution>1</resolution>
-                <min_angle>-1.45245</min_angle>
-                <max_angle>2.34159</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.1</min>
-              <max>15</max>
-              <resolution>0.01</resolution>
-            </range>
-            <noise>
-              <type>gaussian</type>
-              <mean>0</mean>
-              <stddev>0.01</stddev>
-            </noise>
-          </ray>
-          <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
-            <ros>
-              <!-- <namespace>amr_mini_description</namespace> -->
-              <remapping>~/out:=front_lidar_amr_mini_laser</remapping>
-            </ros>
-            <output_type>sensor_msgs/LaserScan</output_type>
-            <frame_name>front_lidar_laser_link</frame_name>
-          </plugin>
-          <pose>0.37 0.223 0.29 3.14159 -0 0.841593</pose>
-        </sensor>
-        <gravity>1</gravity>
-        <sensor name='imu_sensor' type='imu'>
-          <always_on>true</always_on>
-          <update_rate>30</update_rate>
-          <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
-            <ros>
-              <remapping>~/out:=imu</remapping>
-            </ros>
-          </plugin>
-          <pose>0.38 -0 0.15 0 -0 0</pose>
-          <imu/>
-        </sensor>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='back_left_caster_rotation_joint' type='revolute'>
-        <pose relative_to='base_footprint'>-0.37 0.2109 0.133432 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>back_left_caster_rotation_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='back_left_caster_rotation_link'>
-        <pose relative_to='back_left_caster_rotation_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 -0.04 0 -0 0</pose>
-          <mass>0.21</mass>
-          <inertia>
-            <ixx>0.0002</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0002</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001</izz>
-          </inertia>
-        </inertial>
-        <collision name='back_left_caster_rotation_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='back_left_caster_rotation_link_visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='back_left_caster_wheel_joint' type='revolute'>
-        <pose relative_to='back_left_caster_rotation_link'>-0.038 0 -0.089 1.5708 -0 0</pose>
-        <parent>back_left_caster_rotation_link</parent>
-        <child>back_left_caster_wheel_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='back_left_caster_wheel_link'>
-        <pose relative_to='back_left_caster_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.000833333</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000833333</iyy>
-            <iyz>0</iyz>
-            <izz>0.00125</izz>
-          </inertia>
-        </inertial>
-        <collision name='back_left_caster_wheel_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.0342</length>
-              <radius>0.0452</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='back_left_caster_wheel_link_visual'>
-          <pose>0 0 0 3.14159 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.032</length>
-              <radius>0.0432</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red </name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='back_right_caster_rotation_joint' type='revolute'>
-        <pose relative_to='base_footprint'>-0.37 -0.2109 0.133431 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>back_right_caster_rotation_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='back_right_caster_rotation_link'>
-        <pose relative_to='back_right_caster_rotation_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 -0.04 0 -0 0</pose>
-          <mass>0.21</mass>
-          <inertia>
-            <ixx>0.0002</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0002</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001</izz>
-          </inertia>
-        </inertial>
-        <collision name='back_right_caster_rotation_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='back_right_caster_rotation_link_visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='back_right_caster_wheel_joint' type='revolute'>
-        <pose relative_to='back_right_caster_rotation_link'>-0.038 0 -0.089 1.5708 -0 0</pose>
-        <parent>back_right_caster_rotation_link</parent>
-        <child>back_right_caster_wheel_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='back_right_caster_wheel_link'>
-        <pose relative_to='back_right_caster_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.000833333</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000833333</iyy>
-            <iyz>0</iyz>
-            <izz>0.00125</izz>
-          </inertia>
-        </inertial>
-        <collision name='back_right_caster_wheel_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.0342</length>
-              <radius>0.0452</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='back_right_caster_wheel_link_visual'>
-          <pose>0 0 0 3.14159 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.032</length>
-              <radius>0.0432</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red </name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='front_left_caster_rotation_joint' type='revolute'>
-        <pose relative_to='base_footprint'>0.37 0.2109 0.133432 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>front_left_caster_rotation_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='front_left_caster_rotation_link'>
-        <pose relative_to='front_left_caster_rotation_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 -0.04 0 -0 0</pose>
-          <mass>0.21</mass>
-          <inertia>
-            <ixx>0.0002</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0002</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001</izz>
-          </inertia>
-        </inertial>
-        <collision name='front_left_caster_rotation_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='front_left_caster_rotation_link_visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='front_left_caster_wheel_joint' type='revolute'>
-        <pose relative_to='front_left_caster_rotation_link'>-0.038 0 -0.089 1.5708 -0 0</pose>
-        <parent>front_left_caster_rotation_link</parent>
-        <child>front_left_caster_wheel_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='front_left_caster_wheel_link'>
-        <pose relative_to='front_left_caster_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.000833333</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000833333</iyy>
-            <iyz>0</iyz>
-            <izz>0.00125</izz>
-          </inertia>
-        </inertial>
-        <collision name='front_left_caster_wheel_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.0342</length>
-              <radius>0.0452</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='front_left_caster_wheel_link_visual'>
-          <pose>0 0 0 3.14159 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.032</length>
-              <radius>0.0432</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red </name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='front_right_caster_rotation_joint' type='revolute'>
-        <pose relative_to='base_footprint'>0.37 -0.2109 0.133432 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>front_right_caster_rotation_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='front_right_caster_rotation_link'>
-        <pose relative_to='front_right_caster_rotation_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 -0.04 0 -0 0</pose>
-          <mass>0.21</mass>
-          <inertia>
-            <ixx>0.0002</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0002</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001</izz>
-          </inertia>
-        </inertial>
-        <collision name='front_right_caster_rotation_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='front_right_caster_rotation_link_visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 0.9</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='front_right_caster_wheel_joint' type='revolute'>
-        <pose relative_to='front_right_caster_rotation_link'>-0.038 0 -0.089 1.5708 -0 0</pose>
-        <parent>front_right_caster_rotation_link</parent>
-        <child>front_right_caster_wheel_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-            <limit>
-            <effort>100</effort>
-            <velocity>0.1</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>0.01</damping>
-            <friction>0.1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='front_right_caster_wheel_link'>
-        <pose relative_to='front_right_caster_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.000833333</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000833333</iyy>
-            <iyz>0</iyz>
-            <izz>0.00125</izz>
-          </inertia>
-        </inertial>
-        <collision name='front_right_caster_wheel_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.0342</length>
-              <radius>0.0452</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='front_right_caster_wheel_link_visual'>
-          <pose>0 0 0 3.14159 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.032</length>
-              <radius>0.0432</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red </name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='left_wheel_joint' type='revolute'>
-        <pose relative_to='base_footprint'>-0 0.25 0.082 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>left_wheel</child>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>20</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>1</damping>
-            <friction>100</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='left_wheel'>
-        <pose relative_to='left_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.0075</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0085</iyy>
-            <iyz>0</iyz>
-            <izz>0.0085</izz>
-          </inertia>
-        </inertial>
-        <collision name='left_wheel_collision'>
-          <pose>0 0.005 0 1.5708 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.0833</radius>
-              <length>0.0893</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='left_wheel_visual'>
-          <pose>-0.081046 0.05 -0.081046 1.5708 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <joint name='right_wheel_joint' type='revolute'>
-        <pose relative_to='base_footprint'>-0 -0.25 0.082 0 -0 0</pose>
-        <parent>base_footprint</parent>
-        <child>right_wheel</child>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <limit>
-            <effort>100</effort>
-            <velocity>20</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>1</damping>
-            <friction>100</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='right_wheel'>
-        <pose relative_to='right_wheel_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1.5</mass>
-          <inertia>
-            <ixx>0.0075</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0085</iyy>
-            <iyz>0</iyz>
-            <izz>0.0085</izz>
-          </inertia>
-        </inertial>
-        <collision name='right_wheel_collision'>
-          <pose>0 -0.005 0 1.5708 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.0833</radius>
-              <length>0.0893</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <ode>
-                <mu>100000.0</mu>
-                <mu2>100000.0</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0.0</slip1>
-                <slip2>0.0</slip2>
-              </ode>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='right_wheel_visual'>
-          <pose>0.081046 -0.05 -0.081046 1.5708 -0 -3.14159</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-
-      <static>0</static>
-      <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
-        <ros>
-          <namespace>amr_mini_description</namespace>
-        </ros>
-
+  <model name='AmrRobot'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>0.004604 -0 0.181822 0 -0 0</pose>
+        <mass>5.05</mass>
+        <inertia>
+          <ixx>0.401718</ixx>
+          <ixy>1.40761e-17</ixy>
+          <ixz>-0.00423564</ixz>
+          <iyy>0.512422</iyy>
+          <iyz>-3.35687e-17</iyz>
+          <izz>0.790767</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>0.47 -0.3255 0.35 3.14159 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_collision_1'>
+        <pose>0.465 -0 0.364 1.57 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__imu_collision_2'>
+        <pose>0.38 -0 0.11 0 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__left_motor_collision_3'>
+        <pose>-0 0.273 0.08 1.57 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.00065</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__right_motor_collision_4'>
+        <pose>0 -0.273 0.08 1.57 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.00065</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0.47 -0.3255 0.35 3.14159 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Turquoise</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_visual_1'>
+        <pose>0.465 -0 0.364 1.57 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__imu_visual_2'>
+        <pose>0.38 -0 0.11 0 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__left_motor_visual_3'>
+        <pose>-0 0.273 0.08 1.57 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.00065</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__right_motor_visual_4'>
+        <pose>0 -0.273 0.08 1.57 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.00065</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <sensor name='depth_camera' type='depth'>
+        <visualize>1</visualize>
+        <update_rate>10</update_rate>
+        <plugin name='camera_depth_plugin' filename='libgazebo_ros_camera.so'>
+          <ros>
+            <namespace>amr_mini_description</namespace>
+            <remapping>custom_camera/image_raw:=custom_camera/custom_image</remapping>
+            <remapping>custom_camera/image_depth:=custom_camera/custom_image_depth</remapping>
+            <remapping>custom_camera/camera_info:=custom_camera/custom_info_raw</remapping>
+            <remapping>custom_camera/camera_info_depth:=custom_camera/custom_info_depth</remapping>
+            <remapping>custom_camera/points:=custom_camera/custom_points</remapping>
+          </ros>
+          <camera_name>custom_camera</camera_name>
+          <frame_name>camera</frame_name>
+          <hack_baseline>0.07</hack_baseline>
+          <min_depth>0.001</min_depth>
+          <max_depth>300.0</max_depth>
+        </plugin>
+        <pose>0.465 -0 0.364 0 -0 -0</pose>
+      </sensor>
+      <sensor name='rqb_camera' type='camera'>
+        <visualize>1</visualize>
         <update_rate>30</update_rate>
-
-        <left_joint>left_wheel_joint</left_joint>
-        <right_joint>right_wheel_joint</right_joint>
-
-        <wheel_diameter>0.08</wheel_diameter>
-        <wheel_separation>0.21</wheel_separation>
-
-        <max_wheel_torque>20</max_wheel_torque>
-        <max_wheel_acceleration>10</max_wheel_acceleration>
-
-        <command_topic>cmd_vel</command_topic>
-        <cmd_vel_timeout>0.5</cmd_vel_timeout>
-
-        <publish_odom>true</publish_odom>
-        <publish_odom_tf>false</publish_odom_tf>
-        <publish_wheel_tf>false</publish_wheel_tf>
-
-        <odometry_topic>odom</odometry_topic>
-        <odometry_frame>odom</odometry_frame>
-
-        <robot_base_frame>base_footprint</robot_base_frame>
-      </plugin>
-      
-      <plugin name='basic_joint_state' filename='libgazebo_ros_joint_state_publisher.so'>
-        <ros>
-          <remapping>~/out:=joint_states</remapping>
-        </ros>
-
+        <plugin name='camera_rqb_plugin' filename='libgazebo_ros_camera.so'>
+          <ros>
+            <namespace>amr_mini_description</namespace>
+            <remapping>image_raw:=custom_img</remapping>
+            <remapping>camera_info:=custom_info</remapping>
+          </ros>
+          <camera_name>rgb_cam</camera_name>
+          <frame_name>camera</frame_name>
+          <hack_baseline>0.07</hack_baseline>
+        </plugin>
+        <pose>0.465 -0 0.364 0 -0 -0</pose>
+      </sensor>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
         <update_rate>30</update_rate>
-
-        <joint_name>left_wheel_joint</joint_name>
-        <joint_name>right_wheel_joint</joint_name>
-
-        <joint_name>back_left_caster_wheel_joint</joint_name>
-        <joint_name>back_right_caster_wheel_joint</joint_name>
-        <joint_name>front_right_caster_wheel_joint</joint_name>
-        <joint_name>front_left_caster_wheel_joint</joint_name>
-
-        <joint_name>back_left_caster_rotation_joint</joint_name>
-        <joint_name>back_right_caster_rotation_joint</joint_name>
-        <joint_name>front_right_caster_rotation_joint</joint_name>
-        <joint_name>front_left_caster_rotation_joint</joint_name>
-      </plugin>
-    </model>
-   
+        <visualize>1</visualize>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <ros>
+            <remapping>~/out:=imu</remapping>
+          </ros>
+          <frame_name>imu</frame_name>
+        </plugin>
+        <pose>0.38 -0 0.15 0 -0 -0</pose>
+      </sensor>
+    </link>
+    <joint name='back_left_caster_rotation_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0.37 0.2109 0.1336 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>back_left_caster_rotation_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_left_caster_rotation_link'>
+      <pose relative_to='back_left_caster_rotation_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 -0.04 0 -0 0</pose>
+        <mass>0.21</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_left_caster_rotation_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_left_caster_rotation_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='back_left_caster_wheel_joint' type='revolute'>
+      <pose relative_to='back_left_caster_rotation_link'>-0.038 0 -0.088 1.5708 -0 0</pose>
+      <parent>back_left_caster_rotation_link</parent>
+      <child>back_left_caster_wheel_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_left_caster_wheel_link'>
+      <pose relative_to='back_left_caster_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.000833333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000833333</iyy>
+          <iyz>0</iyz>
+          <izz>0.00125</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_left_caster_wheel_link_collision'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_left_caster_wheel_link_visual'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='back_lidar_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0.37 -0.223 0.29 3.14159 0 -2.36159</pose>
+      <parent>base_footprint</parent>
+      <child>back_lidar_laser_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_lidar_laser_link'>
+      <pose relative_to='back_lidar_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.0075</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085</iyy>
+          <iyz>0</iyz>
+          <izz>0.0085</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_lidar_laser_link_collision'>
+        <pose>-0.072 -0.085 0.02 3.14159 -0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_lidar_laser_link_visual'>
+        <pose>-0.072 -0.085 0.02 0 -0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <sensor name='back_lidar_rplidar_sensor' type='ray'>
+        <pose>0 0 0 0 -0 0</pose>
+        <visualize>1</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>270</samples>
+              <resolution>1</resolution>
+              <min_angle>-1</min_angle>
+              <max_angle>2</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>15</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
+          <ros>
+            <remapping>~/out:=back_lidar_amr_mini_laser</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>back_lidar_laser_link</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name='back_right_caster_rotation_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0.37 -0.2109 0.1336 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>back_right_caster_rotation_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_right_caster_rotation_link'>
+      <pose relative_to='back_right_caster_rotation_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 -0.04 0 -0 0</pose>
+        <mass>0.21</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_right_caster_rotation_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_right_caster_rotation_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='back_right_caster_wheel_joint' type='revolute'>
+      <pose relative_to='back_right_caster_rotation_link'>-0.038 0 -0.088 1.5708 -0 0</pose>
+      <parent>back_right_caster_rotation_link</parent>
+      <child>back_right_caster_wheel_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_right_caster_wheel_link'>
+      <pose relative_to='back_right_caster_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.000833333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000833333</iyy>
+          <iyz>0</iyz>
+          <izz>0.00125</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_right_caster_wheel_link_collision'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_right_caster_wheel_link_visual'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='front_left_caster_rotation_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0.37 0.2109 0.1336 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>front_left_caster_rotation_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_left_caster_rotation_link'>
+      <pose relative_to='front_left_caster_rotation_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 -0.04 0 -0 0</pose>
+        <mass>0.21</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_caster_rotation_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_caster_rotation_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='front_left_caster_wheel_joint' type='revolute'>
+      <pose relative_to='front_left_caster_rotation_link'>-0.038 0 -0.088 1.5708 -0 0</pose>
+      <parent>front_left_caster_rotation_link</parent>
+      <child>front_left_caster_wheel_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_left_caster_wheel_link'>
+      <pose relative_to='front_left_caster_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.000833333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000833333</iyy>
+          <iyz>0</iyz>
+          <izz>0.00125</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_caster_wheel_link_collision'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_caster_wheel_link_visual'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='front_lidar_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0.37 0.223 0.29 3.14159 -0 0.801593</pose>
+      <parent>base_footprint</parent>
+      <child>front_lidar_laser_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_lidar_laser_link'>
+      <pose relative_to='front_lidar_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.0075</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085</iyy>
+          <iyz>0</iyz>
+          <izz>0.0085</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_lidar_laser_link_collision'>
+        <pose>-0.072 -0.085 0.02 3.14159 -0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_lidar_laser_link_visual'>
+        <pose>-0.072 -0.085 0.02 0 -0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <sensor name='front_lidar_rplidar_sensor' type='ray'>
+        <pose>0 0 0 0 -0 0</pose>
+        <visualize>1</visualize>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>270</samples>
+              <resolution>1</resolution>
+              <min_angle>-1</min_angle>
+              <max_angle>2</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>15</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_ray_sensor.so'>
+          <ros>
+            <remapping>~/out:=front_lidar_amr_mini_laser</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>front_lidar_laser_link</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+    <joint name='front_right_caster_rotation_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0.37 -0.2109 0.1336 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>front_right_caster_rotation_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <damping>0.01</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_right_caster_rotation_link'>
+      <pose relative_to='front_right_caster_rotation_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 -0.04 0 -0 0</pose>
+        <mass>0.21</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_caster_rotation_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_caster_rotation_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='front_right_caster_wheel_joint' type='revolute'>
+      <pose relative_to='front_right_caster_rotation_link'>-0.038 0 -0.088 1.5708 -0 0</pose>
+      <parent>front_right_caster_rotation_link</parent>
+      <child>front_right_caster_wheel_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>0.1</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_right_caster_wheel_link'>
+      <pose relative_to='front_right_caster_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.000833333</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000833333</iyy>
+          <iyz>0</iyz>
+          <izz>0.00125</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_caster_wheel_link_collision'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_caster_wheel_link_visual'>
+        <pose>0 0 0 3.14159 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.032</length>
+            <radius>0.0432</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='left_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0 0.25 0.082 0 -0 -0</pose>
+      <parent>base_footprint</parent>
+      <child>left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>20</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_wheel'>
+      <pose relative_to='left_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.0075</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085</iyy>
+          <iyz>0</iyz>
+          <izz>0.0085</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_wheel_collision'>
+        <pose>-0.081046 0.05 -0.081046 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_wheel_visual'>
+        <pose>-0.081046 0.05 -0.081046 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0 -0.25 0.082 0 -0 -0</pose>
+      <parent>base_footprint</parent>
+      <child>right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>100</effort>
+          <velocity>20</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_wheel'>
+      <pose relative_to='right_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.0075</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0085</iyy>
+          <iyz>0</iyz>
+          <izz>0.0085</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_wheel_collision'>
+        <pose>0.081046 -0.05 -0.081046 1.5708 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_wheel_visual'>
+        <pose>0.081046 -0.05 -0.081046 1.5708 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+    <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+      <ros>
+        <namespace>amr_mini_description</namespace>
+      </ros>
+      <update_rate>30</update_rate>
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_diameter>0.08</wheel_diameter>
+      <wheel_separation>0.21</wheel_separation>
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>10</max_wheel_acceleration>
+      <command_topic>cmd_vel</command_topic>
+      <cmd_vel_timeout>0.5</cmd_vel_timeout>
+      <publish_odom>1</publish_odom>
+      <publish_odom_tf>0</publish_odom_tf>
+      <publish_wheel_tf>0</publish_wheel_tf>
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+    </plugin>
+    <plugin name='basic_joint_state' filename='libgazebo_ros_joint_state_publisher.so'>
+      <ros>
+        <remapping>~/out:=joint_states</remapping>
+      </ros>
+      <update_rate>30</update_rate>
+      <joint_name>left_wheel_joint</joint_name>
+      <joint_name>right_wheel_joint</joint_name>
+      <joint_name>back_left_caster_wheel_joint</joint_name>
+      <joint_name>back_right_caster_wheel_joint</joint_name>
+      <joint_name>front_right_caster_wheel_joint</joint_name>
+      <joint_name>front_left_caster_wheel_joint</joint_name>
+      <joint_name>back_left_caster_rotation_joint</joint_name>
+      <joint_name>back_right_caster_rotation_joint</joint_name>
+      <joint_name>front_right_caster_rotation_joint</joint_name>
+      <joint_name>front_left_caster_rotation_joint</joint_name>
+    </plugin>
+    <slip1>1.0</slip1>
+    <slip2>1.0</slip2>
+    <slip1>1.0</slip1>
+    <slip2>1.0</slip2>
+    <slip1>1.0</slip1>
+    <slip2>1.0</slip2>
+    <slip1>1.0</slip1>
+    <slip2>1.0</slip2>
+  </model>
 </sdf>

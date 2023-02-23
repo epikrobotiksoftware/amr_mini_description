@@ -18,6 +18,8 @@ setup(
         (os.path.join('share', package_name), glob('rviz/*')),
         (os.path.join('share', package_name+'/urdf'),
          glob('urdf/*.xacro')),
+        (os.path.join('share', package_name+'/urdf'),
+         glob('urdf/*.urdf')),
         (os.path.join('share', package_name + '/urdf/urdf_include'),
          glob('urdf/urdf_include/*')),
         (os.path.join('share', package_name+'/AmrMini_models/Amr_mini/meshes'),
