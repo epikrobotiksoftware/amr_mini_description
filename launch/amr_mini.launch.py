@@ -130,7 +130,7 @@ def generate_launch_description():
         robot_state_publisher,
         robot_localization_node,
         # rqt_robot_steering,
-        # merge_laser_scan,
+        merge_laser_scan,
         rviz_node,
         map_server
         # slam_toolbox

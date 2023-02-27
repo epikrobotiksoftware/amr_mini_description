@@ -365,7 +365,7 @@
             </joint>
           </ros2_control>      -->
   <joint name="back_lidar_joint" type="continuous">
-    <origin rpy="3.141592653589793 0 0.78 " xyz="0.37 0.223 0.21"/>
+    <origin rpy="0 0 0.15707963267948966 " xyz="0.34 0.22 0.19"/>
     <parent link="base_link"/>
     <child link="back_lidar_laser_link"/>
   </joint>
@@ -374,17 +374,17 @@
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="0 0 3.141592653589793" xyz="-0.072 -0.085 0.02"/>
+      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 3.141592653589793" xyz="-0.072 -0.085 0.02"/>
+      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1.5"/>
+      <mass value="0.14"/>
       <inertia ixx="0.0075" ixy="0.0" ixz="0.0" iyy="0.0085" iyz="0.0" izz="0.0085"/>
     </inertial>
   </link>
@@ -394,21 +394,22 @@
   <gazebo reference="back_lidar_laser_link">
     <sensor name="back_lidar_rplidar_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
+      <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>5</update_rate>
+      <update_rate>10</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>270</samples>
-            <resolution>1</resolution>
-            <min_angle>-1.0</min_angle>
-            <max_angle>2.0</max_angle>
+            <resolution>1.00000</resolution>
+            <min_angle>-1.45</min_angle>
+            <max_angle>2.36</max_angle>
           </horizontal>
         </scan>
         <range>
-          <min>0.10</min>
-          <max>15</max>
-          <resolution>0.01</resolution>
+          <min>0.120000</min>
+          <max>20</max>
+          <resolution>0.015000</resolution>
         </range>
         <noise>
           <type>gaussian</type>
@@ -426,7 +427,7 @@
     </sensor>
   </gazebo>
   <joint name="front_lidar_joint" type="continuous">
-    <origin rpy="3.141592653589793 0 -2.34" xyz="-0.37 -0.223 0.21"/>
+    <origin rpy="0 0 -3.141592653589793" xyz="-0.34 -0.22 0.19"/>
     <parent link="base_link"/>
     <child link="front_lidar_laser_link"/>
   </joint>
@@ -435,17 +436,17 @@
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="0 0 3.141592653589793" xyz="-0.072 -0.085 0.02"/>
+      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 3.141592653589793" xyz="-0.072 -0.085 0.02"/>
+      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="1.5"/>
+      <mass value="0.14"/>
       <inertia ixx="0.0075" ixy="0.0" ixz="0.0" iyy="0.0085" iyz="0.0" izz="0.0085"/>
     </inertial>
   </link>
@@ -455,21 +456,22 @@
   <gazebo reference="front_lidar_laser_link">
     <sensor name="front_lidar_rplidar_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
+      <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>5</update_rate>
+      <update_rate>10</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>270</samples>
-            <resolution>1</resolution>
-            <min_angle>-1.0</min_angle>
-            <max_angle>2.0</max_angle>
+            <resolution>1.00000</resolution>
+            <min_angle>-1.45</min_angle>
+            <max_angle>2.36</max_angle>
           </horizontal>
         </scan>
         <range>
-          <min>0.10</min>
-          <max>15</max>
-          <resolution>0.01</resolution>
+          <min>0.120000</min>
+          <max>20</max>
+          <resolution>0.015000</resolution>
         </range>
         <noise>
           <type>gaussian</type>
@@ -486,6 +488,10 @@
       </plugin>
     </sensor>
   </gazebo>
+  <!-- Lidar-->
+  <!-- <xacro:lidar name="main_lidar" parent="base_link">
+      <origin rpy="${pi} 0 0" xyz="0 0  ${lidar_z+0.165}"/>
+    </xacro:lidar> -->
   <joint name="imu_joint" type="fixed">
     <origin rpy="0 0 3.141592653589793" xyz="-0.38 0 0.07"/>
     <parent link="base_link"/>

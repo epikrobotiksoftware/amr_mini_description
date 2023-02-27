@@ -31,8 +31,8 @@ class ReadingLaser(Node):
         self.merged_pub = self.create_publisher(LaserScan, 'scan', 10)
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard : Range[0] "%f" Ranges[100]: "%f"' % (
-            msg.ranges[0], msg.ranges[100]))
+        # self.get_logger().info('I heard : Range[0] "%f" Ranges[100]: "%f"' % (
+        #     msg.ranges[0], msg.ranges[100]))
         self.laser_data = msg
         self.merged_pub.publish(msg)
 
