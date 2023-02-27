@@ -1,0 +1,3 @@
+map_server:
+  ros__parameters:
+    yaml_filename: "/home/mkutan/Documents/ros2_ws/src/amr_mini_description/maps/my_map_save.yaml"

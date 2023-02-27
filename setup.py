@@ -14,7 +14,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name+"/"+package_name), glob(package_name+'/*')),
-        (os.path.join('share', package_name), glob('launch/*.py')),
+        (os.path.join('share', package_name+'/launch'), glob('launch/*.py')),
         (os.path.join('share', package_name), glob('rviz/*')),
         (os.path.join('share', package_name+'/urdf'),
          glob('urdf/*.xacro')),
@@ -32,8 +32,8 @@ setup(
          glob('worlds/*')),
         (os.path.join('share', package_name+'/config'),
          glob('config/*')),
-        (os.path.join('share', package_name+'/src'),
-         glob('src/*')),
+        (os.path.join('share', package_name+'/maps'),
+         glob('maps/*')),
 
     ],
     install_requires=['setuptools'],
@@ -46,7 +46,7 @@ setup(
     entry_points={
         'console_scripts': [
             # 'frontlidar_pub=amr_mini_description.publisher_member_function:main',
-            'merge_laser_scan=amr_mini_description.subscriber_member_function:main',
+            'merge_laser_scan=amr_mini_description.subscriber_member_function:main'
         ],
     },
 )

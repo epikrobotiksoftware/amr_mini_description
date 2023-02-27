@@ -374,13 +374,13 @@
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
+      <origin rpy="3.141592653589793 0 -2.5132741228718345" xyz="-0.075 0.02 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
+      <origin rpy="3.141592653589793 0 -2.5132741228718345" xyz="-0.078 0 0"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -396,14 +396,14 @@
       <pose>0 0 0 0 0 0</pose>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>2</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>270</samples>
             <resolution>1.00000</resolution>
-            <min_angle>-1.45</min_angle>
-            <max_angle>2.36</max_angle>
+            <min_angle>-1.45245</min_angle>
+            <max_angle>2.7159</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -436,13 +436,13 @@
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
+      <origin rpy="3.141592653589793 0 -2.5132741228718345" xyz="-0.075 0.02 0"/>
     </visual>
     <collision>
       <geometry>
         <mesh filename="file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <origin rpy="3.141592653589793 0 -2.41660973353061" xyz="-0.075 0 0"/>
+      <origin rpy="3.141592653589793 0 -2.5132741228718345" xyz="-0.078 0 0"/>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -458,14 +458,14 @@
       <pose>0 0 0 0 0 0</pose>
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>2</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>270</samples>
             <resolution>1.00000</resolution>
-            <min_angle>-1.45</min_angle>
-            <max_angle>2.36</max_angle>
+            <min_angle>-1.45245</min_angle>
+            <max_angle>2.7159</max_angle>
           </horizontal>
         </scan>
         <range>
