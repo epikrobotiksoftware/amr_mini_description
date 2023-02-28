@@ -63,7 +63,8 @@ def generate_launch_description():
         executable='merge_laser_scan',
         name='merge_laser_scan',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time}]
+        parameters=[{'use_sim_time': use_sim_time}],
+        arguments={'front_lidar_amr_mini_laser', 'back_lidar_amr_mini_laser'}
     )
 
     # rqt_robot_steering = Node(package='rqt_robot_steering',

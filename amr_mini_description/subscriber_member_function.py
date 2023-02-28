@@ -5,10 +5,10 @@ from rclpy.qos import QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolic
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import LaserScan
 from rclpy.executors import MultiThreadedExecutor
+import sys
 
-
-flt = 'front_lidar_amr_mini_laser'
-blt = 'back_lidar_amr_mini_laser'
+# flt = 'front_lidar_amr_mini_laser'
+# blt = 'back_lidar_amr_mini_laser'
 
 
 class ReadingLaser(Node):
@@ -45,6 +45,12 @@ class ReadingLaser(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    flt = sys.argv[1]
+    blt = sys.argv[2]
+
+    print("**********************", flt)
+    print("**********************", blt)
+
     reading_laser_flt = ReadingLaser(flt)
     reading_laser_blt = ReadingLaser(blt)
     executor = MultiThreadedExecutor(4)
