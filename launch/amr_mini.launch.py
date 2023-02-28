@@ -83,6 +83,6 @@ def generate_launch_description():
         rviz_launch,
         # mapping_launch,
         amcl_launch,
-        #initialpose_launch
+        initialpose_launch
     ])
     #############################################################

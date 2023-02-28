@@ -47,7 +47,7 @@ setup(
         'console_scripts': [
             # 'frontlidar_pub=amr_mini_description.publisher_member_function:main',
             'merge_laser_scan=amr_mini_description.subscriber_member_function:main',
-            'initialpose_pub=amr_mini_description.initialpose:main'
+            'initialpose_pub=amr_mini_description.initialpose:main',
         ],
     },
 )
