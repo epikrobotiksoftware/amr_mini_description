@@ -66,6 +66,10 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/amcl.launch.py'))
 
+    initialpose_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            pkg_dir + '/launch/initialpose.launch.py'))
+
     return LaunchDescription([
         DeclareLaunchArgument(name='model', default_value=robot_desc,
                               description='Absolute path to robot urdf file'),
@@ -79,5 +83,6 @@ def generate_launch_description():
         rviz_launch,
         # mapping_launch,
         amcl_launch,
+        #initialpose_launch
     ])
     #############################################################
