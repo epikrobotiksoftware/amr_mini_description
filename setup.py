@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 from glob import glob
-from setuptools import setup
+
 
 package_name = 'amr_mini_description'
 
@@ -26,6 +26,8 @@ setup(
          glob('AmrMini_models/Amr_mini/meshes/*')),
         (os.path.join('share', package_name+'/models/world_folder'),
             glob('models/world_folder/*')),
+        (os.path.join('share', package_name+'/models/world_models'),
+            glob('models/world_models/*')),
         (os.path.join('share', package_name+'/models/amr_mini'),
             glob('models/amr_mini/*')),
         (os.path.join('share', package_name+'/worlds'),
