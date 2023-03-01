@@ -352,7 +352,7 @@
       <pose relative_to='base_footprint'>-0.34 -0.22 0.27 -0 0 -2.98451</pose>
       <parent>base_footprint</parent>
       <child>back_lidar_laser_link</child>
-    
+      
     </joint>
     <link name='back_lidar_laser_link'>
       <pose relative_to='back_lidar_joint'>0 0 0 0 -0 0</pose>
@@ -702,7 +702,6 @@
       <pose relative_to='base_footprint'>0.34 0.22 0.27 0 -0 0</pose>
       <parent>base_footprint</parent>
       <child>front_lidar_laser_link</child>
-      
     </joint>
     <link name='front_lidar_laser_link'>
       <pose relative_to='front_lidar_joint'>0 0 0 0 -0 0</pose>
