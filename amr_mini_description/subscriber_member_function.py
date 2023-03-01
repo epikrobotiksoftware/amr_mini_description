@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolicy
+from rclpy.qos import QoSDurabilityPolicy, QoSReliabilityPolicy
 from rclpy.qos import QoSProfile
 from sensor_msgs.msg import LaserScan
 from rclpy.executors import MultiThreadedExecutor
