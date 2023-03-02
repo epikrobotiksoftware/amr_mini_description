@@ -10,7 +10,7 @@ import launch_ros.actions
 def generate_launch_description():
     use_sim_time = os.environ.get('USE_SIM_TIME', True)
     map_yaml_file = os.path.join(get_package_share_directory(
-        'amr_mini_description'), 'maps/map_save.yaml')
+        'amr_mini_description'), 'maps/my_map_save.yaml')
 
     map_server_cmd = Node(
         package='nav2_map_server',

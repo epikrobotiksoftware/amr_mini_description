@@ -11,7 +11,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     #############################################################
     use_sim_time = os.environ.get('USE_SIM_TIME', True)
-    world_file_name = 'world.model'
+    world_file_name = 'my_world.model'
     world = os.path.join(get_package_share_directory(
         'amr_mini_description'), 'worlds', world_file_name)
 
