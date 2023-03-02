@@ -47,7 +47,7 @@
             <kd>1</kd>
             <minDepth>0.001</minDepth>
             <maxVel>1.0</maxVel>
-        </gazebo> -->
+        </gazebo>
 <!--     
           <ros2_control name="GazeboSystem" type="system">
             <hardware>
