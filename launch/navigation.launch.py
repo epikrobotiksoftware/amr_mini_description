@@ -65,7 +65,7 @@ def generate_launch_description():
             description='Use simulation (Gazebo) clock if true'),
 
         DeclareLaunchArgument(
-            'autostart', default_value='true',
+            'autostart', default_value='True',
             description='Automatically startup the nav2 stack'),
 
         DeclareLaunchArgument(
@@ -82,7 +82,7 @@ def generate_launch_description():
             description='Full path to the behavior tree xml file to use'),
 
         DeclareLaunchArgument(
-            'map_subscribe_transient_local', default_value='true',
+            'map_subscribe_transient_local', default_value='True',
             description='Whether to set the map subscriber QoS to transient local'),
 
         Node(
@@ -132,5 +132,4 @@ def generate_launch_description():
             parameters=[{'use_sim_time': use_sim_time},
                         {'autostart': autostart},
                         {'node_names': lifecycle_nodes}]),
-
     ])
