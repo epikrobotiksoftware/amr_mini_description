@@ -15,7 +15,6 @@ def generate_launch_description():
     use_sim_time = os.environ.get('USE_SIM_TIME', True)
 
     pkg_dir = get_package_share_directory('amr_mini_description')
-    merge_lidar = get_package_share_directory('laser_relay')
 
     xacro_file_name = os.environ.get('XACRO_FILE_NAME', 'amr_mini.xacro')
     xacro_urdf_path = os.path.join(get_package_share_directory(
@@ -57,7 +56,7 @@ def generate_launch_description():
 
     merge_laser_scan_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            merge_lidar + '/launch/test.launch.py'))
+            pkg_dir + '/launch/laser_relay.launch.py'))
 
     mapping_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -89,6 +88,7 @@ def generate_launch_description():
         # mapping_launch,
         amcl_launch,
         initialpose_launch,
+
         nav2_launch
     ])
     #############################################################

@@ -10,6 +10,8 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from nav2_common.launch import RewrittenYaml
 
+import time
+
 
 def generate_launch_description():
  #############################################################
@@ -33,7 +35,7 @@ def generate_launch_description():
                   ('/tf_static', 'tf_static'),
                   ('/cmd_vel', '/amr_mini_description/cmd_vel'),
                   ('/odom', '/amr_mini_description/odom'),
-                  ('/scan', '/front_lidar_amr_mini_laser')
+
                   ]
 
     # Create our own temporary YAML files that include substitutions
@@ -79,7 +81,7 @@ def generate_launch_description():
             description='Full path to the behavior tree xml file to use'),
 
         DeclareLaunchArgument(
-            'map_subscribe_transient_local', default_value='True',
+            'map_subscribe_transient_local', default_value='true',
             description='Whether to set the map subscriber QoS to transient local'),
 
         Node(
