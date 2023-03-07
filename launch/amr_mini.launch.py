@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 import os
+import xacro
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch_ros.actions import Node
-import xacro
 from launch import LaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
@@ -73,6 +73,7 @@ def generate_launch_description():
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/navigation.launch.py'))
+
     goalPose_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/goalPose.launch.py'))
@@ -80,6 +81,8 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument(name='model', default_value=robot_desc,
                               description='Absolute path to robot urdf file'),
+
+
 
         gazebo_launch,
         joint_state_publisher,
@@ -89,9 +92,11 @@ def generate_launch_description():
         merge_laser_scan_launch,
         rviz_launch,
         # mapping_launch,
-        amcl_launch,
         initialpose_launch,
+        amcl_launch,
         nav2_launch,
         goalPose_launch
+
+
     ])
     #############################################################

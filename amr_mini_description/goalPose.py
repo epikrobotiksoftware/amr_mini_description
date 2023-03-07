@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
+import time
 
 
 class RecoveryGlobalPlanPublisher(Node):
@@ -27,7 +28,9 @@ class RecoveryGlobalPlanPublisher(Node):
         pose_msg.pose.orientation.w = 1.0
 
         # Publish the message
+        time.sleep(10)
         self.publisher_.publish(pose_msg)
+        rclpy.shutdown()
 
 
 def main(args=None):
