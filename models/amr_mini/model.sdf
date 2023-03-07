@@ -403,7 +403,7 @@
       <sensor name='back_lidar_rplidar_sensor' type='ray'>
         <pose>0 0 0 0 -0 0</pose>
         <always_on>1</always_on>
-        <visualize>1</visualize>
+        <visualize>0</visualize>
         <update_rate>2</update_rate>
         <ray>
           <scan>
@@ -752,7 +752,7 @@
       <sensor name='front_lidar_rplidar_sensor' type='ray'>
         <pose>0 0 0 0 -0 0</pose>
         <always_on>1</always_on>
-        <visualize>1</visualize>
+        <visualize>0</visualize>
         <update_rate>2</update_rate>
         <ray>
           <scan>
