@@ -13,14 +13,12 @@ class InitialPosePublisher(Node):
         self.publishers_ = self.create_timer(0.5, self.publish_initial_pose)
 
     def publish_initial_pose(self):
-        # Create a PoseWithCovarianceStamped message
         pose_msg = PoseWithCovarianceStamped()
 
         # Set the header
         pose_msg.header.stamp = self.get_clock().now().to_msg()
         pose_msg.header.frame_id = 'map'
 
-        # Set the initial pose
         pose_msg.pose.pose.position.x = 0.0
         pose_msg.pose.pose.position.y = 0.0
         pose_msg.pose.pose.position.z = 0.0
