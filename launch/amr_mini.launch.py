@@ -73,6 +73,9 @@ def generate_launch_description():
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/navigation.launch.py'))
+    goalPose_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            pkg_dir + '/launch/goalPose.launch.py'))
 
     return LaunchDescription([
         DeclareLaunchArgument(name='model', default_value=robot_desc,
@@ -88,7 +91,7 @@ def generate_launch_description():
         # mapping_launch,
         amcl_launch,
         initialpose_launch,
-
-        nav2_launch
+        nav2_launch,
+        goalPose_launch
     ])
     #############################################################

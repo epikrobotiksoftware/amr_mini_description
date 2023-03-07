@@ -28,6 +28,8 @@ setup(
             glob('models/world_folder/*')),
         (os.path.join('share', package_name+'/models/world_models'),
             glob('models/world_models/*')),
+        (os.path.join('share', package_name+'/models/new_walls'),
+            glob('models/new_walls/*')),
         (os.path.join('share', package_name+'/models/amr_mini'),
             glob('models/amr_mini/*')),
         (os.path.join('share', package_name+'/worlds'),
@@ -50,6 +52,7 @@ setup(
     entry_points={
         'console_scripts': [
             'initialpose_pub=amr_mini_description.initialpose:main',
+            'goalPose_pub=amr_mini_description.goalPose:main',
         ],
     },
 )
