@@ -53,7 +53,6 @@ setup(
         'console_scripts': [
             'initialpose_pub=amr_mini_description.initialpose:main',
             'goalPose_pub=amr_mini_description.goalPose:main',
-            'requirements_txt=amr_mini_description.requirements_python:main',
         ],
     },
 )
