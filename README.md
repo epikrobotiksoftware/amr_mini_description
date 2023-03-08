@@ -9,18 +9,32 @@ Usage:
 - Go your workspace. Build package and install requirements.
 
         colcon build && source install/setup.bash
-        cd src/amr_mini_description/
-        python3 requirements.py
 
-- Open the model.sdf file in the amr_mini folder under the models folder and edit frond lidar and Back lidar joint. change type and remove axis.
+        rosdep install --from-paths src --ignore-src -r -y
+
+- Convert your urdf to sdf for gazebo.for this go to your package.
+
+                cd src/amr_mini_description/
+                python3 requirements.py
+
+- Open the model.sdf file in the amr_mini folder under the models folder and edit frond lidar and Back lidar joint. You need to change type.
 
   Like this:
 
-              <joint name='front_lidar_joint' type='fixed'>
-                  <pose relative_to='base_footprint'>0.34 0.22 0.27 0 -0 0</pose>
-                  <parent>base_footprint</parent>
-                  <child>front_lidar_laser_link</child>
-              </joint>
+        line:351    <joint name='back_lidar_joint' type='fixed'>
+                            .
+                            .
+                            .
+                     </joint>
+
+
+
+
+        line: 711   <joint name='front_lidar_joint' type='fixed'>
+                        .
+                        .
+                        .
+                    </joint>
 
 - Go your workspace
 
