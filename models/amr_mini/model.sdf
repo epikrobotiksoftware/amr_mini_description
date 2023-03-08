@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -35,7 +35,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -52,7 +52,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -69,7 +69,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.00065</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -86,7 +86,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.00065</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -103,7 +103,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/sase.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -118,7 +118,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/camera.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -127,7 +127,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/imu.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -142,7 +142,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.00065</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -157,7 +157,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.00065</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/motor.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -255,7 +255,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -272,7 +272,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -352,7 +352,6 @@
       <pose relative_to='base_footprint'>-0.34 -0.22 0.27 -0 0 -2.98451</pose>
       <parent>base_footprint</parent>
       <child>back_lidar_laser_link</child>
-      
     </joint>
     <link name='back_lidar_laser_link'>
       <pose relative_to='back_lidar_joint'>0 0 0 0 -0 0</pose>
@@ -373,7 +372,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -390,7 +389,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -473,7 +472,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -490,7 +489,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -605,7 +604,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -622,7 +621,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -702,7 +701,6 @@
       <pose relative_to='base_footprint'>0.34 0.22 0.27 0 -0 0</pose>
       <parent>base_footprint</parent>
       <child>front_lidar_laser_link</child>
-     
     </joint>
     <link name='front_lidar_laser_link'>
       <pose relative_to='front_lidar_joint'>0 0 0 0 -0 0</pose>
@@ -723,7 +721,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -740,7 +738,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/lidar.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -823,7 +821,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -840,7 +838,7 @@
         <geometry>
           <mesh>
             <scale>1 1 0.9</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -953,7 +951,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -962,7 +960,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1004,7 +1002,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -1013,7 +1011,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>file:///home/mkutan/Documents/ros2_ws/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
+            <uri>file:///home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes/wheel.STL</uri>
           </mesh>
         </geometry>
       </visual>
