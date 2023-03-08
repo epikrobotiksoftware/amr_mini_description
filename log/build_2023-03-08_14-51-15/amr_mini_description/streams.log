@@ -1,0 +1,116 @@
+[0.549s] Invoking command in '/home/mkutan/Documents/ros2_ws/src/amr_mini_description': PYTHONPATH=/home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/prefix_override:/home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/amr_mini_description build --build-base /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build install --record /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/install.log --single-version-externally-managed
+[0.720s] running egg_info
+[0.720s] creating build/amr_mini_description/amr_mini_description.egg-info
+[0.720s] writing build/amr_mini_description/amr_mini_description.egg-info/PKG-INFO
+[0.720s] writing dependency_links to build/amr_mini_description/amr_mini_description.egg-info/dependency_links.txt
+[0.720s] writing entry points to build/amr_mini_description/amr_mini_description.egg-info/entry_points.txt
+[0.721s] writing requirements to build/amr_mini_description/amr_mini_description.egg-info/requires.txt
+[0.721s] writing top-level names to build/amr_mini_description/amr_mini_description.egg-info/top_level.txt
+[0.721s] writing manifest file 'build/amr_mini_description/amr_mini_description.egg-info/SOURCES.txt'
+[0.749s] reading manifest file 'build/amr_mini_description/amr_mini_description.egg-info/SOURCES.txt'
+[0.749s] writing manifest file 'build/amr_mini_description/amr_mini_description.egg-info/SOURCES.txt'
+[0.749s] running build
+[0.750s] running build_py
+[0.750s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build
+[0.750s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib
+[0.750s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description
+[0.750s] copying amr_mini_description/__init__.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description
+[0.750s] copying amr_mini_description/goalPose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description
+[0.750s] copying amr_mini_description/initialpose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description
+[0.750s] running install
+[0.750s] running install_lib
+[0.751s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description
+[0.751s] copying /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description/__init__.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description
+[0.751s] copying /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description/goalPose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description
+[0.751s] copying /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build/lib/amr_mini_description/initialpose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description
+[0.751s] byte-compiling /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description/__init__.py to __init__.cpython-38.pyc
+[0.752s] byte-compiling /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description/goalPose.py to goalPose.cpython-38.pyc
+[0.753s] byte-compiling /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description/initialpose.py to initialpose.cpython-38.pyc
+[0.753s] running install_data
+[0.753s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/ament_index
+[0.753s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/ament_index/resource_index
+[0.753s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/ament_index/resource_index/packages
+[0.753s] copying resource/amr_mini_description -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/ament_index/resource_index/packages
+[0.753s] copying package.xml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description
+[0.754s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/amr_mini_description
+[0.754s] copying amr_mini_description/__init__.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/amr_mini_description
+[0.754s] copying amr_mini_description/goalPose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/amr_mini_description
+[0.754s] copying amr_mini_description/initialpose.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/amr_mini_description
+[0.754s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/gazebo.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/map_server.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/robot_localization.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/laser_relay.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/amr_mini.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/amcl.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/mapping.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.754s] copying launch/initialpose.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.755s] copying launch/rviz.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.755s] copying launch/navigation.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.755s] copying launch/goalPose.launch.py -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/launch
+[0.755s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/rviz
+[0.755s] copying rviz/amr_mini.rviz -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/rviz
+[0.764s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf
+[0.764s] copying urdf/amr_mini.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf
+[0.764s] copying urdf/amr.urdf -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf
+[0.774s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.774s] copying urdf/urdf_include/base_link.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.785s] copying urdf/urdf_include/imu.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.795s] copying urdf/urdf_include/wheel.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.804s] copying urdf/urdf_include/camera.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.817s] copying urdf/urdf_include/caster_wheel_link.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.833s] copying urdf/urdf_include/motor.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.848s] copying urdf/urdf_include/caster_wheel.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.848s] copying urdf/urdf_include/common_properties.urdf.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.862s] copying urdf/urdf_include/lidar.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.862s] copying urdf/urdf_include/gazebo.xacro -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/urdf/urdf_include
+[0.862s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models
+[0.862s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini
+[0.862s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.862s] copying AmrMini_models/Amr_mini/meshes/Ekran Görüntüsü (71).png -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.882s] copying AmrMini_models/Amr_mini/meshes/imu.stl -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.901s] copying AmrMini_models/Amr_mini/meshes/motor.stl -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.941s] copying AmrMini_models/Amr_mini/meshes/sase.stl -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.956s] copying AmrMini_models/Amr_mini/meshes/wheel.STL -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.966s] copying AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[0.978s] copying AmrMini_models/Amr_mini/meshes/motorveteker.dae -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[1.025s] copying AmrMini_models/Amr_mini/meshes/camera.dae -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[1.158s] copying AmrMini_models/Amr_mini/meshes/lidar.stl -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/AmrMini_models/Amr_mini/meshes
+[1.184s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models
+[1.184s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/world_folder
+[1.184s] copying models/world_folder/model.config -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/world_folder
+[1.192s] copying models/world_folder/model.sdf -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/world_folder
+[1.204s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/world_models
+[1.205s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/new_walls
+[1.205s] copying models/new_walls/model.config -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/new_walls
+[1.209s] copying models/new_walls/model.sdf -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/new_walls
+[1.226s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/amr_mini
+[1.226s] copying models/amr_mini/model.config -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/amr_mini
+[1.237s] copying models/amr_mini/model.sdf -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/models/amr_mini
+[1.237s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.238s] copying worlds/my_world.model -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.250s] copying worlds/walls.model -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.258s] copying worlds/empty.world -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.268s] copying worlds/myworld.model -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.268s] copying worlds/world.model -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/worlds
+[1.284s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/config
+[1.284s] copying config/ekf.yaml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/config
+[1.296s] copying config/mapper_params_online_async.yaml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/config
+[1.315s] copying config/nav2_params.yaml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/config
+[1.315s] creating /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.315s] copying maps/my_map_save.yaml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.326s] copying maps/my_map_save.pgm -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.345s] copying maps/map_save.pgm -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.355s] copying maps/map_serial.data -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.382s] copying maps/map_save.yaml -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.396s] copying maps/my_map_serial.posegraph -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.612s] copying maps/my_map_serial.data -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.649s] copying maps/map_serial.posegraph -> /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/share/amr_mini_description/maps
+[1.814s] running install_egg_info
+[1.815s] Copying build/amr_mini_description/amr_mini_description.egg-info to /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages/amr_mini_description-0.0.0-py3.8.egg-info
+[1.816s] running install_scripts
+[1.832s] Installing goalPose_pub script to /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/amr_mini_description
+[1.832s] Installing initialpose_pub script to /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/amr_mini_description
+[1.832s] Installing requirements_txt script to /home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/amr_mini_description
+[1.832s] writing list of installed files to '/home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/install.log'
+[1.846s] Invoked command in '/home/mkutan/Documents/ros2_ws/src/amr_mini_description' returned '0': PYTHONPATH=/home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/prefix_override:/home/mkutan/Documents/ros2_ws/src/amr_mini_description/install/amr_mini_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/amr_mini_description build --build-base /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/build install --record /home/mkutan/Documents/ros2_ws/src/amr_mini_description/build/amr_mini_description/install.log --single-version-externally-managed

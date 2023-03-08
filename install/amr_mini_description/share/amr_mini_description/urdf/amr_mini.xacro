@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AmrRobot">
+
+    <xacro:property name="pi" value="3.14"/>
+    <xacro:property name="pi_2" value="1.57"/>
+    <xacro:property name="wheel_x" value="0"/>
+    <xacro:property name="wheel_y" value="0.25"/>
+    <xacro:property name="wheel_z" value="0.002"/>
+    <xacro:property name="lidar_z" value="0.19"/>
+    <xacro:property name="lidar_x" value="0.34"/>
+    <xacro:property name="lidar_y" value="0.220"/>
+    <xacro:property name="amr_mini_caster_wheel_radius" value="0.0525" />
+    <xacro:property name="amr_mini_caster_wheel_dz" value="0.0112" />
+    <xacro:property name="amr_mini_front_caster_wheel_base_dx" value="0.37"/>
+    <xacro:property name="amr_mini_front_caster_wheel_base_dz" value="0.0536"/>
+    <xacro:property name="locationright" value="1"/>
+
+    <!-- include-->
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/base_link.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/motor.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/wheel.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/lidar.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/caster_wheel.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/imu.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/camera.xacro"/>
+  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/gazebo.xacro"/>
+    <!-- Base_link-->
+    <xacro:base_link name="base_link" parent="base_footprint">
+         <origin rpy="${pi} ${pi} 0" xyz="0 0 0.08"/>
+    </xacro:base_link>
+
+    <!--Right_motor -->
+    <xacro:motor name="right_motor" parent="base_link">
+      <origin rpy="0 0 0" xyz="0 0.223 0"/>
+    </xacro:motor>
+
+     <!--Left_motor -->
+     <xacro:motor name="left_motor" parent="base_link">
+      <origin rpy="-${pi} ${pi} 0" xyz="0 -0.223 0"/>       
+    </xacro:motor>
+
+    <!--Right wheel-->
+    <xacro:wheel name="right_wheel" parent="base_link" reflect="-${locationright}">
+      <origin rpy="0 0 ${pi}" xyz="${wheel_x} ${wheel_y} ${wheel_z}"/>
+    </xacro:wheel>
+
+      <!--left wheel-->
+    <xacro:wheel name="left_wheel" parent="base_link" reflect="${locationright}">
+      <origin rpy="0 0 ${pi}" xyz="${wheel_x} -${wheel_y} ${wheel_z}"/>
+    </xacro:wheel>
+
+    <!-- Back Lidar-->
+    <xacro:lidar name="back_lidar" parent="base_link">
+      <origin rpy="0 0 ${pi/20} " xyz="${lidar_x} ${lidar_y} ${lidar_z}"/>
+    </xacro:lidar>
+
+    <!-- Left Lidar-->
+    <xacro:lidar name="front_lidar" parent="base_link">
+      <origin rpy="0 0 -${pi}" xyz="-${lidar_x} -${lidar_y} ${lidar_z}"/>
+    </xacro:lidar>
+
+    <!-- Lidar-->
+    <!-- <xacro:lidar name="main_lidar" parent="base_link">
+      <origin rpy="${pi} 0 0" xyz="0 0  ${lidar_z+0.165}"/>
+    </xacro:lidar> -->
+
+    <!--imu-->
+    <xacro:imu name="imu" parent="base_link">
+      <origin rpy="0 0 ${pi}" xyz="-0.38 0 0.07"/>
+    </xacro:imu>
+        <!--camera-->
+    <xacro:camera name="camera" parent="base_link">
+      <origin rpy="0 0 ${pi} " xyz="-0.465 0 0.284"/>
+    </xacro:camera>
+
+    <!--Caster base Hub-->
+    <xacro:caster_wheel parent="base_link" locationprefix='back_left' >
+      <origin rpy="${pi} ${pi} 0" xyz="${amr_mini_front_caster_wheel_base_dx} -${amr_mini_front_caster_wheel_base_dx*locationright*0.57} ${amr_mini_front_caster_wheel_base_dz}"/>
+    </xacro:caster_wheel>
+
+    <xacro:caster_wheel parent="base_link" locationprefix='back_right' >
+      <origin rpy="${pi} ${pi} 0" xyz="${amr_mini_front_caster_wheel_base_dx} ${amr_mini_front_caster_wheel_base_dx*locationright*0.57} ${amr_mini_front_caster_wheel_base_dz}"/>
+    </xacro:caster_wheel>
+
+    <xacro:caster_wheel parent="base_link" locationprefix='front_right' >
+      <origin rpy="-${pi} ${pi} 0" xyz="-${amr_mini_front_caster_wheel_base_dx} ${amr_mini_front_caster_wheel_base_dx*locationright*0.57} ${amr_mini_front_caster_wheel_base_dz}"/>
+    </xacro:caster_wheel>
+
+    <xacro:caster_wheel parent="base_link" locationprefix='front_left' >
+      <origin rpy="${pi} ${pi} 0" xyz="-${amr_mini_front_caster_wheel_base_dx} -${amr_mini_front_caster_wheel_base_dx*locationright*0.57} ${amr_mini_front_caster_wheel_base_dz}"/>
+    </xacro:caster_wheel>
+    <!--Gazebo-->
+    <xacro:gazebo_diff></xacro:gazebo_diff>
+</robot>

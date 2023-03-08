@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AmrRobot">
+
+  <xacro:property name="pi" value="3.14"/>
+  
+  <xacro:macro name="base_link" params="name parent *origin">
+      <link name='${parent}'/>
+      <joint name="${name}_joint" type="fixed">
+          <xacro:insert_block name="origin"/>
+          <parent link="${parent}"/>
+          <child link="${name}"/>
+      </joint>
+      <link name="${name}">
+          <visual>
+          <origin rpy="${pi} 0 0" xyz="-0.47 0.3255 0.27"/>
+            <geometry>
+              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/sase.stl" scale="0.001 0.001 0.001"/>
+            </geometry>     
+          </visual>
+          <collision>
+            <geometry>
+              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/sase.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <origin rpy="${pi} 0 0" xyz="-0.47 0.3255 0.27"/>
+          </collision>
+          <inertial>
+            <origin xyz="0.0 0 0.1" />
+            <mass value="5" />
+            <inertia ixx="0.4" ixy="0" ixz="0" iyy="0.5" iyz="0" izz="0.78" />  
+          </inertial>
+
+      </link>
+      <gazebo reference="${name}">
+        <material>
+          Gazebo/Turquoise</material>
+      </gazebo>
+  </xacro:macro>
+</robot>

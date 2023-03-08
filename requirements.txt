@@ -1,0 +1,9 @@
+sudo apt install ros-foxy-nav2*
+sudo apt install ros-foxy-lifecycle*
+sudo apt install ros-foxy-joint-state*
+sudo apt install ros-foxy-robot-state-publisher*
+sudo apt install ros-foxy-smac-*
+sudo apt install ros-foxy-slam-toolbox*
+
+xacro urdf/amr_mini.xacro> urdf/amr_mini_xacro2.urdf
+gz sdf -p urdf/amr_mini_xacro2.urdf > models/amr_mini/model2.sdf
