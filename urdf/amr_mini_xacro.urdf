@@ -294,8 +294,6 @@
     <minDepth>0.001</minDepth>
     <maxVel>1.0</maxVel>
   </gazebo>
-   --&gt;
-
   <!--     
           <ros2_control name="GazeboSystem" type="system">
             <hardware>
@@ -348,8 +346,6 @@
     <minDepth>0.001</minDepth>
     <maxVel>1.0</maxVel>
   </gazebo>
-   --&gt;
-
   <!--     
           <ros2_control name="GazeboSystem" type="system">
             <hardware>
@@ -395,7 +391,7 @@
     <sensor name="back_lidar_rplidar_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
       <always_on>true</always_on>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>2</update_rate>
       <ray>
         <scan>
@@ -457,7 +453,7 @@
     <sensor name="front_lidar_rplidar_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
       <always_on>true</always_on>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>2</update_rate>
       <ray>
         <scan>
