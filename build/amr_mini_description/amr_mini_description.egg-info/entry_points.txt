@@ -1,5 +1,0 @@
-[console_scripts]
-goalPose_pub = amr_mini_description.goalPose:main
-initialpose_pub = amr_mini_description.initialpose:main
-requirements_txt = amr_mini_description.requirements_python:main
-
