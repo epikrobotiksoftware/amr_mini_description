@@ -2,8 +2,6 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AmrRobot">
     <xacro:arg name="use_nominal_extrinsics" default="false"/>
 
-    <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/_d435i.urdf.xacro" />
-
     <xacro:macro name="camera" params="name parent *origin locationprefix">
 
         <joint name="${name}_joint" type="fixed">
@@ -16,13 +14,13 @@
             <visual>
                 <origin xyz="0 0 0" rpy="1.57 0 1.57" />
                 <geometry>
-                    <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/camera.dae" />
+                    <mesh filename="file://$(find amr_mini_description)/meshes/camera.dae" />
                 </geometry>
             </visual>
             <collision>
                 <origin xyz="0 0 0" rpy="1.57 0 1.57" />
                 <geometry>
-                    <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/camera.dae" />
+                    <mesh filename="file://$(find amr_mini_description)/meshes/camera.dae" />
                 </geometry>
             </collision>
             <xacro:cylinder_inertia m="0.05"

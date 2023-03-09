@@ -19,12 +19,12 @@
             <visual>
                 <origin rpy="${pi/2} 0 ${pi/2.0*(reflect - 1)}" xyz="${reflect*wheel_location_x} ${reflect*wheel_location_y} ${wheel_location_z}"/>
                 <geometry>
-                <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/wheel.STL" scale="0.001 0.001 0.001"/>
+                <mesh filename="file://$(find amr_mini_description)/meshes/wheel.STL" scale="0.001 0.001 0.001"/>
                 </geometry>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/wheel.STL" scale="0.001 0.001 0.001"/>
+                    <mesh filename="file://$(find amr_mini_description)/meshes/wheel.STL" scale="0.001 0.001 0.001"/>
                 </geometry>
                 <origin rpy="${pi/2} 0 ${pi/2.0*(reflect - 1)}" xyz="${reflect*wheel_location_x} ${reflect*wheel_location_y} ${wheel_location_z}"/>
             </collision>

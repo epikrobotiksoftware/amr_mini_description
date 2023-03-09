@@ -11,13 +11,13 @@
             <visual>
                <origin xyz="0  0 -0.04" rpy="0 0 0" />
                 <geometry>
-                    <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/imu.stl" scale="0.001 0.001 0.001" />
+                    <mesh filename="file://$(find amr_mini_description)/meshes/imu.stl" scale="0.001 0.001 0.001" />
                 </geometry>
             </visual>
             <collision>
                 <origin xyz="0  0 -0.04" rpy="0 0 0" />
                 <geometry>
-                    <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/imu.stl" scale="0.001 0.001 0.001" />
+                    <mesh filename="file://$(find amr_mini_description)/meshes/imu.stl" scale="0.001 0.001 0.001" />
                 </geometry>
             </collision>   
         </link>

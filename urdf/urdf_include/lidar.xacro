@@ -15,13 +15,13 @@
       <link name="${name}_laser_link">
           <visual>
               <geometry>
-                <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="file://$(find amr_mini_description)/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
               </geometry>
               <origin rpy="${pi} 0 -${pi/1.25}" xyz="-0.075 0.02 0"/>
             </visual>
             <collision>
               <geometry>
-                <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="file://$(find amr_mini_description)/meshes/lidar.stl" scale="0.001 0.001 0.001"/>
               </geometry>
               <origin rpy="${pi} 0 -${pi/1.25}" xyz="-0.078 0 0"/>
             </collision>

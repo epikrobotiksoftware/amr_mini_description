@@ -14,12 +14,12 @@
           <visual>
           <origin rpy="${pi} 0 0" xyz="-0.47 0.3255 0.27"/>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/sase.stl" scale="0.001 0.001 0.001"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/sase.stl" scale="0.001 0.001 0.001"/>
             </geometry>     
           </visual>
           <collision>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/sase.stl" scale="0.001 0.001 0.001"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/sase.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <origin rpy="${pi} 0 0" xyz="-0.47 0.3255 0.27"/>
           </collision>

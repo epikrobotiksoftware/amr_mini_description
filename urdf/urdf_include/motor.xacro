@@ -18,14 +18,14 @@
     <link name="${name}">
         <visual>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/motor.stl" scale="0.001 0.001 0.00065"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/motor.stl" scale="0.001 0.001 0.00065"/>
             </geometry>
             <origin rpy="1.57 0 0 " xyz="0 0.05 0"/>
            
           </visual>
           <collision>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/motor.stl" scale="0.001 0.001 0.00065"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/motor.stl" scale="0.001 0.001 0.00065"/>
             </geometry>
             <origin rpy="1.57 0 0 " xyz="0 0.05 0"/>
           </collision>

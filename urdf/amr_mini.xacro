@@ -15,8 +15,6 @@
     <xacro:property name="amr_mini_front_caster_wheel_base_dz" value="0.0536"/>
     <xacro:property name="locationright" value="1"/>
 
-   <xacro:arg name="use_nominal_extrinsics" default="false"/>
-
     <!-- include-->
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/base_link.xacro"/>
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/motor.xacro"/>
@@ -24,10 +22,7 @@
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/lidar.xacro"/>
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/caster_wheel.xacro"/>
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/imu.xacro"/>
-
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/gazebo.xacro"/>
-  <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/_d435i.urdf.xacro" />
-
   <xacro:include filename="$(find amr_mini_description)/urdf/urdf_include/intel_d435.urdf.xacro" />
     <!-- Base_link-->
     <xacro:base_link name="base_link" parent="base_footprint">
@@ -64,11 +59,6 @@
       <origin rpy="0 0 -${pi}" xyz="-${lidar_x} -${lidar_y} ${lidar_z}"/>
     </xacro:lidar>
 
-    <!-- Lidar-->
-    <!-- <xacro:lidar name="main_lidar" parent="base_link">
-      <origin rpy="${pi} 0 0" xyz="0 0  ${lidar_z+0.165}"/>
-    </xacro:lidar> -->
-
     <!--imu-->
     <xacro:imu name="imu" parent="base_link">
       <origin rpy="0 0 ${pi}" xyz="-0.38 0 0.07"/>
@@ -77,19 +67,7 @@
     <!-- <xacro:camera name="camera" parent="base_link"  locationprefix="left">
       <origin rpy="0 0 ${pi} " xyz="-0.405 0.2 0.274"/>
     </xacro:camera>
-
-    <xacro:camera name="camera" parent="base_link"  locationprefix="right">
-      <origin rpy="0 0 ${pi} " xyz="-0.405 0.2 0.274"/>
-    </xacro:camera> -->
-<!-- 
-
-    <xacro:sensor_d435i parent="base_link" use_nominal_extrinsics="$(arg use_nominal_extrinsics)" locationprefix="left">
-      <origin rpy="0 0 ${pi} " xyz="-0.405 0.2 0.274"/>
-    </xacro:sensor_d435i>
-
-    <xacro:sensor_d435i parent="base_link" use_nominal_extrinsics="$(arg use_nominal_extrinsics)" locationprefix="right">
-      <origin rpy="0 0 ${pi} " xyz="-0.405 -0.2 0.274"/>
-    </xacro:sensor_d435i> -->
+  -->
 
     <!-- Intel Realsense -->
     <xacro:sensor_intel_d435i prefix="left_realsense" parent="base_link" prefix_topic="left_realsense">

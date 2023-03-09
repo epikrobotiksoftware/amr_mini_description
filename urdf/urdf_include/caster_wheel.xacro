@@ -32,14 +32,14 @@
           <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
             </geometry>
            
           </visual>
   
           <collision>
             <geometry>
-              <mesh filename="file://$(find amr_mini_description)/AmrMini_models/Amr_mini/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
+              <mesh filename="file://$(find amr_mini_description)/meshes/caster_wheel_base.stl" scale="1 1 0.9"/>
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0"/>
           </collision>
