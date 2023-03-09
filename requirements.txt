@@ -1,4 +1,2 @@
-sudo apt install ros-foxy-nav2*
-
 xacro urdf/amr_mini.xacro> urdf/amr_mini_xacro.urdf
 gz sdf -p urdf/amr_mini_xacro.urdf > models/amr_mini/model.sdf
