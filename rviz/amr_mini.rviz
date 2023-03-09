@@ -5,9 +5,10 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /RobotModel1/Description Topic1
+        - /TF1/Frames1
         - /PoseArray1/Topic1
         - /Global_Planner1/Path1
-      Splitter Ratio: 0.3529411852359772
+      Splitter Ratio: 0.8294117450714111
     Tree Height: 865
   - Class: rviz_common/Selection
     Name: Selection
@@ -97,11 +98,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         front_left_caster_rotation_link:
           Alpha: 1
           Show Axes: false
@@ -137,12 +133,94 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_realsense_rgb_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_infra1_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_infra1_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_infra2_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_infra2_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_realsense_rgb_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         left_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         right_motor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_realsense_rgb_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_infra1_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_infra1_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_infra2_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_infra2_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_realsense_rgb_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -158,19 +236,154 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        back_left_caster_rotation_link:
+          Value: false
+        back_left_caster_wheel_link:
+          Value: false
+        back_lidar_laser_link:
+          Value: false
+        back_right_caster_rotation_link:
+          Value: false
+        back_right_caster_wheel_link:
+          Value: false
+        base_footprint:
+          Value: false
+        base_link:
+          Value: false
+        front_left_caster_rotation_link:
+          Value: false
+        front_left_caster_wheel_link:
+          Value: false
+        front_lidar_laser_link:
+          Value: false
+        front_right_caster_rotation_link:
+          Value: false
+        front_right_caster_wheel_link:
+          Value: false
+        imu:
+          Value: false
+        left_motor:
+          Value: false
+        left_realsense_rgb_base_link:
+          Value: true
+        left_realsense_rgb_color_frame:
+          Value: false
+        left_realsense_rgb_color_optical_frame:
+          Value: false
+        left_realsense_rgb_depth_frame:
+          Value: false
+        left_realsense_rgb_depth_optical_frame:
+          Value: false
+        left_realsense_rgb_infra1_frame:
+          Value: false
+        left_realsense_rgb_infra1_optical_frame:
+          Value: false
+        left_realsense_rgb_infra2_frame:
+          Value: false
+        left_realsense_rgb_infra2_optical_frame:
+          Value: false
+        left_realsense_rgb_link:
+          Value: false
+        left_wheel:
+          Value: false
+        map:
+          Value: false
+        odom:
+          Value: false
+        right_motor:
+          Value: false
+        right_realsense_rgb_base_link:
+          Value: true
+        right_realsense_rgb_color_frame:
+          Value: false
+        right_realsense_rgb_color_optical_frame:
+          Value: false
+        right_realsense_rgb_depth_frame:
+          Value: false
+        right_realsense_rgb_depth_optical_frame:
+          Value: false
+        right_realsense_rgb_infra1_frame:
+          Value: false
+        right_realsense_rgb_infra1_optical_frame:
+          Value: false
+        right_realsense_rgb_infra2_frame:
+          Value: false
+        right_realsense_rgb_infra2_optical_frame:
+          Value: false
+        right_realsense_rgb_link:
+          Value: false
+        right_wheel:
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        {}
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                back_left_caster_rotation_link:
+                  back_left_caster_wheel_link:
+                    {}
+                back_lidar_laser_link:
+                  {}
+                back_right_caster_rotation_link:
+                  back_right_caster_wheel_link:
+                    {}
+                front_left_caster_rotation_link:
+                  front_left_caster_wheel_link:
+                    {}
+                front_lidar_laser_link:
+                  {}
+                front_right_caster_rotation_link:
+                  front_right_caster_wheel_link:
+                    {}
+                imu:
+                  {}
+                left_motor:
+                  {}
+                left_realsense_rgb_base_link:
+                  left_realsense_rgb_link:
+                    left_realsense_rgb_color_frame:
+                      left_realsense_rgb_color_optical_frame:
+                        {}
+                    left_realsense_rgb_depth_frame:
+                      left_realsense_rgb_depth_optical_frame:
+                        {}
+                    left_realsense_rgb_infra1_frame:
+                      left_realsense_rgb_infra1_optical_frame:
+                        {}
+                    left_realsense_rgb_infra2_frame:
+                      left_realsense_rgb_infra2_optical_frame:
+                        {}
+                left_wheel:
+                  {}
+                right_motor:
+                  {}
+                right_realsense_rgb_base_link:
+                  right_realsense_rgb_link:
+                    right_realsense_rgb_color_frame:
+                      right_realsense_rgb_color_optical_frame:
+                        {}
+                    right_realsense_rgb_depth_frame:
+                      right_realsense_rgb_depth_optical_frame:
+                        {}
+                    right_realsense_rgb_infra1_frame:
+                      right_realsense_rgb_infra1_optical_frame:
+                        {}
+                    right_realsense_rgb_infra2_frame:
+                      right_realsense_rgb_infra2_optical_frame:
+                        {}
+                right_wheel:
+                  {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.30000001192092896
@@ -528,11 +741,8 @@ Visualization Manager:
               LaserScan: true
               Value: true
             Local_Planner:
-              Map: true
-              Path: true
-              Polygon: true
+              "": true
               Value: true
-              VoxelGrid: true
             Odemetry:
               Odometry: true
               Value: true
@@ -618,11 +828,8 @@ Visualization Manager:
               LaserScan: true
               Value: true
             Local_Planner:
-              Map: true
-              Path: true
-              Polygon: true
+              "": true
               Value: true
-              VoxelGrid: true
             Odemetry:
               Odometry: true
               Value: true
@@ -806,25 +1013,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/XYOrbit
-      Distance: 63.48015594482422
+      Distance: 2.6896920204162598
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -17.43425178527832
-        Y: -2.004401206970215
-        Z: -2.6702880859375e-05
+        X: -1.3375656604766846
+        Y: -0.5746803283691406
+        Z: -2.0705942006316036e-05
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: -0.10020291060209274
       Target Frame: <Fixed Frame>
       Value: XYOrbit (rviz_default_plugins)
-      Yaw: 3.1523847579956055
+      Yaw: 0.3473849296569824
     Saved: ~
 Window Geometry:
   Camera:

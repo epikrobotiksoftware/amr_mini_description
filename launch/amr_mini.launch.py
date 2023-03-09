@@ -78,6 +78,10 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/goalPose.launch.py'))
 
+    rs_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            pkg_dir + '/launch/rs_launch.launch.py'))
+
     return LaunchDescription([
         DeclareLaunchArgument(name='model', default_value=robot_desc,
                               description='Absolute path to robot urdf file'),
@@ -95,7 +99,9 @@ def generate_launch_description():
         initialpose_launch,
         amcl_launch,
         nav2_launch,
-        goalPose_launch
+        # goalPose_launch,
+        # rs_launch
+
 
 
     ])
