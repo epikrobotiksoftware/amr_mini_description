@@ -25,7 +25,7 @@ Usage:
 
   Like this:
 
-        line:351    <joint name='back_lidar_joint' type='fixed'>
+        line:542    <joint name='back_lidar_joint' type='fixed'>
                             .
                             .
                             .
@@ -34,7 +34,7 @@ Usage:
 
 
 
-        line: 711   <joint name='front_lidar_joint' type='fixed'>
+        line: 902   <joint name='front_lidar_joint' type='fixed'>
                         .
                         .
                         .
