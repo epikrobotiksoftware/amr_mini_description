@@ -17,7 +17,7 @@ Usage:
                 cd src/amr_mini_description/
                 python3 requirements.py
 
-- Open the model.sdf file in the amr_mini folder under the models folder and edit frond lidar and back lidar joint. You need to change type.
+- Open the model.sdf file in the amr_mini folder under the models folder and edit frond lidar and back lidar joint. You need to change "type".
 
   Like this:
 
