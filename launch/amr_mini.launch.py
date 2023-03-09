@@ -99,8 +99,7 @@ def generate_launch_description():
         initialpose_launch,
         amcl_launch,
         nav2_launch,
-        # goalPose_launch,
-        # rs_launch
+        goalPose_launch,
 
 
 
