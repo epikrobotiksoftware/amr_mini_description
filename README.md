@@ -6,7 +6,7 @@ Usage:
 
         https://github.com/epikrobotiksoftware/Laser-Relay.git
 
-- Clone camera plugin in your workspace for using realsense camera
+- Clone camera plugin in your workspace for using realsense camera.Not: Don't forget chancing branch for ros2-foxy
 
         https://github.com/pal-robotics/realsense_gazebo_plugin.git
 
