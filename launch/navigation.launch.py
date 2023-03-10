@@ -33,7 +33,7 @@ def generate_launch_description():
 
     remappings = [('/tf', 'tf'),
                   ('/tf_static', 'tf_static'),
-                  ('/cmd_vel', '/amr_mini_description/cmd_vel'),
+                  ('/cmd_vel', '/cmd_vel_nav'),
                   ('/odom', '/amr_mini_description/odom'),
 
                   ]

@@ -6,9 +6,10 @@ Usage:
 
         https://github.com/epikrobotiksoftware/Laser-Relay.git
 
-- Clone camera plugin in your workspace for using realsense camera.Not: Don't forget chancing branch for ros2-foxy
+- Clone camera plugin in your workspace for using realsense camera.
+  Note: Don't forget chancing branch for ros2-foxy
 
-        https://github.com/pal-robotics/realsense_gazebo_plugin.git
+          https://github.com/pal-robotics/realsense_gazebo_plugin.git
 
 - Go your workspace. Build package and install requirements.
 
@@ -44,3 +45,5 @@ Usage:
 
         colcon build && source install/setup.bash
         ros2 launch amr_mini_description amr_mini.launch.py
+
+* NOTE: If you use JoyStıck and TwistMux. You need to chance topic of Joystick's "cmd_vel" topic. Replace "cmd_vel" topic with " cmd_vel_joy "
