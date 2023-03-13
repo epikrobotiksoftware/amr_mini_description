@@ -522,7 +522,7 @@
     </sensor>
   </gazebo>
   <!--camera-->
-  <!-- <xacro:camera name="camera" parent="base_link"  locationprefix="left">
+  <!-- <xacro:camera name="camera" parent="base_link">
       <origin rpy="0 0 ${pi} " xyz="-0.405 0.2 0.274"/>
     </xacro:camera>
   -->

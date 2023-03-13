@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="AmrRobot">
-    <xacro:arg name="use_nominal_extrinsics" default="false"/>
 
-    <xacro:macro name="camera" params="name parent *origin locationprefix">
+    <xacro:macro name="camera" params="name parent *origin">
 
         <joint name="${name}_joint" type="fixed">
             <xacro:insert_block name="origin" />
             <parent link="${parent}" />
-            <child link="${locationprefix}_${name}" />
+            <child link="${name}" />
         </joint>
 
-        <!-- <link name="${name}">
+        <link name="${name}">
             <visual>
                 <origin xyz="0 0 0" rpy="1.57 0 1.57" />
                 <geometry>
@@ -27,7 +26,7 @@
                 r="0.05"
                 l="0.05"
                 o_xyz="0 0 0" o_rpy="0 0 0" />
-        </link> -->
+        </link>
        <gazebo reference="${name}">
         
         <sensor type="depth" name="depth_camera">
@@ -36,16 +35,16 @@
             <update_rate>10.0</update_rate>
          
             <plugin name="${name}_depth_plugin" filename="libgazebo_ros_camera.so">
-              <!-- <ros>
+              <ros>
                 <namespace>amr_mini_description</namespace>
                 <remapping>custom_camera/image_raw:=custom_camera/custom_image</remapping>
                 <remapping>custom_camera/image_depth:=custom_camera/custom_image_depth</remapping>
                 <remapping>custom_camera/camera_info:=custom_camera/custom_info_raw</remapping>
                 <remapping>custom_camera/camera_info_depth:=custom_camera/custom_info_depth</remapping>
                 <remapping>custom_camera/points:=custom_camera/custom_points</remapping>  
-              </ros> -->
-            <camera_name>${locationprefix}_${name}_custom_camera</camera_name>
-              <frame_name>${locationprefix}_${name}</frame_name>
+              </ros>
+            <camera_name>custom_camera</camera_name>
+              <frame_name>${name}</frame_name>
               <hack_baseline>0.07</hack_baseline>
                <min_depth>0.001</min_depth> 
                <max_depth>300.0</max_depth> 
@@ -57,13 +56,13 @@
             <visualize>true</visualize>
             <update_rate>30.0</update_rate>
             <plugin name="${name}_rqb_plugin" filename="libgazebo_ros_camera.so">
-                <!-- <ros>
+                <ros>
                     <namespace>amr_mini_description</namespace>
                     <remapping>image_raw:=custom_img</remapping>
                     <remapping>camera_info:=custom_info</remapping>
-                  </ros> -->
-                  <camera_name>${locationprefix}_${name}_rgb_cam</camera_name>
-                  <frame_name>${locationprefix}_${name}</frame_name>           
+                  </ros>
+                  <camera_name>rgb_cam</camera_name>
+                  <frame_name>${name}</frame_name>           
                   <hack_baseline>0.07</hack_baseline>
             </plugin>
         </sensor>
