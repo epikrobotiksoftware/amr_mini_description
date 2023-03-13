@@ -17,12 +17,14 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             pkg_dir + '/launch/map_server.launch.py'))
 
+    params_file_dir = os.path.join(
+        get_package_share_directory('amr_mini_description'), 'config', 'amcl.yaml')
     amcl = Node(
         package='nav2_amcl',
         executable='amcl',
         output='screen',
-        parameters=[
-            {'use_sim_time': use_sim_time}]
+        parameters=[params_file_dir,
+                    {'use_sim_time': use_sim_time}]
     )
 
     lifecycle_nodes = ['amcl']

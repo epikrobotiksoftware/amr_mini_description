@@ -95,7 +95,7 @@ def generate_launch_description():
         rviz_launch,
         # mapping_launch,
         TwistMux_launch,
-        initialpose_launch,
+        # initialpose_launch,
         amcl_launch,
         nav2_launch,
         goalPose_launch,
