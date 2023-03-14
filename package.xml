@@ -16,6 +16,8 @@
   <exec_depend>gazebo</exec_depend>
   <exec_depend>slam_toolbox</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+  <exec_depend>nav2_behavior_tree</exec_depend>
   <exec_depend>twist_mux</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>rviz2</exec_depend>
@@ -23,8 +25,6 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>realsense2_camera</exec_depend>
-  
-
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
